@@ -16,7 +16,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Sign Up</title>
-  <meta name ="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" />
+  <meta name ="viewport" content="width=device-width, initial-scale=0.8, maximum-scale=0.8, minimum-scale=0.8, user-scalable=0" />
   <meta name="MobileOptimized" content="width">
   <link rel="icon" href="../icons/icon-my.png" type="image/png" sizes="64x64">
   <link rel="stylesheet" type="text/css" href="../css/main.css"/>
