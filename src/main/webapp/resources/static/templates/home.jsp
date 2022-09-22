@@ -10,7 +10,7 @@
   <link rel="stylesheet" type="text/css" href="../css/main.css"/>
   <link rel="stylesheet" type="text/css" media="screen and (max-device-width:720px)" href="../css/main-smart.css">
   <link rel="stylesheet" type="text/css" href="../css/home.css"/>
-  <link rel="stylesheet" type="text/css" media="max-device-width:720px" href="../css/home-smart.css">
+  <link rel="stylesheet" type="text/css" media="screen and (max-device-width:720px)" href="../css/home-smart.css">
 </head>
 <body>
   <nav class="top-nav">

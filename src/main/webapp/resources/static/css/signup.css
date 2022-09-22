@@ -1,5 +1,17 @@
+body {
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .outer {
-  margin: 12vh 30vw 12vh 25vw;
   padding: 5%;
 }
 

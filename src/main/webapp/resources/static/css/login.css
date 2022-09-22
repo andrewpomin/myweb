@@ -1,5 +1,11 @@
+body {
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .outer {
-  margin: 15vh 30vw 15vh 25vw;
   padding: 5%;
 }
 
