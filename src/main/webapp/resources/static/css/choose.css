@@ -13,8 +13,6 @@ body {
   min-height: 45em;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .groups {

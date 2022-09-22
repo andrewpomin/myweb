@@ -16,7 +16,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Sign Up</title>
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" />
+  <meta name="MobileOptimized" content="width">
   <link rel="icon" href="../icons/icon-my.png" type="image/png" sizes="64x64">
+  <link rel="stylesheet" type="text/css" href="../css/main.css"/>
+  <link rel="stylesheet" type="text/css" media="screen and (max-device-width:720px)" href="../css/main-smart.css">
     <link rel="stylesheet" type="text/css" href="../css/signup.css"/>
 </head>
 <body>
@@ -53,7 +57,7 @@
       <label class="object">
         <span style="width: 165px; margin-right: 10px"></span>
         <span style="width: 130px; margin-left: 161px; font-size: 16px;
-        color: red" <%= attribute %>>*User already exists</span>
+        color: #b40e0e" <%= attribute %>>*User already exists</span>
       </label>
       <label class="object">
         <span style="width: 165px; margin-right: 10px"></span>

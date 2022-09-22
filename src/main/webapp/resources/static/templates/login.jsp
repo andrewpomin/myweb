@@ -16,7 +16,11 @@ if (request.getParameter("error") != null) {
 <head>
     <meta charset="UTF-8">
     <title>Log In</title>
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" />
+  <meta name="MobileOptimized" content="width">
   <link rel="icon" href="../icons/icon-my.png" type="image/png" sizes="64x64" />
+  <link rel="stylesheet" type="text/css" href="../css/main.css"/>
+  <link rel="stylesheet" type="text/css" media="screen and (max-device-width:720px)" href="../css/main-smart.css">
   <link rel="stylesheet" href="../css/login.css" type="text/css" />
 </head>
 <body>
@@ -37,7 +41,7 @@ if (request.getParameter("error") != null) {
       </label>
       <label class="object">
         <span style="width: 100px"></span>
-        <span style="width: 176px; color: red; font-size: 16px; margin-left: 115px;" <%= attribute %>>
+        <span style="width: 176px; color: #b40e0e; font-size: 16px; margin-left: 115px;" <%= attribute %>>
           *Wrong email or password</span>
       </label>
       </form>
