@@ -1,3 +1,11 @@
+body {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+}
+
 .box {
     display: flex;
     flex-direction: column;
@@ -16,13 +24,15 @@
 }
 
 .cell {
-    size: 100px;
+    width: 100px;
+    height: 100px;
 }
 
 .X {
     background-image: url(../icons/X.png);
-    background-size: 100px;
-    size: 100px;
+    background-size: 100px 100px;
+    width: 100px;
+    height: 100px;
 }
 
 .O {
