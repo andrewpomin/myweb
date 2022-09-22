@@ -1,4 +1,4 @@
 /.idea/
 /target/
-/src/main/java/myprojects/secure/
-/src/main/webapp/resources/application.properties
+#/src/main/java/myprojects/secure/
+#/src/main/webapp/resources/application.properties
