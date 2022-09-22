@@ -1,4 +1,24 @@
 .zone {
-    width: 90%;
-    height: 90%;
+    background-size: 100px;
+}
+
+.line {
+    height: 100px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+}
+
+.X {
+    background-image: url(../icons/X.png);
+    width: 100px;
+    height: 100px;
+}
+
+.O {
+    background-image: url(../icons/O.png);
+    width: 100px;
+    height: 100px;
 }

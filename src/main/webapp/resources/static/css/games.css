@@ -3,7 +3,7 @@ body {
   align-content: center;
   justify-content: center;
   align-items: center;
-  height: -webkit-fill-available;
+  height: inherit;
 }
 
 .box {
@@ -49,7 +49,7 @@ body {
   font-size: 30px;
   font-family: Cambria, serif;
   border-radius: 8px;
-  background-color: #07544Bff;
+  background-color: #1e5878;
   border: 2px solid #fff;
   outline: 1px solid #999;
 }
