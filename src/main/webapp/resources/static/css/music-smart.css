@@ -1,0 +1,21 @@
+.box-music {
+  width: 100%;
+}
+
+.song-name {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.author {
+  font-size: 1.025em;
+}
+
+.song {
+  font-size: 0.95em;
+}
+
+.info-music {
+  visibility: hidden;
+  padding: 0;
+}

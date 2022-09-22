@@ -1,0 +1,87 @@
+body {
+  background-image: url(../icons/morpheus.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.flex-container {
+  width: 100%;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  min-height: 45em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.groups {
+  margin-top: 180px;
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form {
+  margin: 5px;
+  position: sticky;
+}
+
+.b-login {
+  margin: 5px;
+  width: 120px;
+  height: 50px;
+  border: 2px solid #fff;
+  outline: 1px solid #999;
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.24), 1px 0 0 1px rgba(0,0,0,0.19);
+  border-radius: 8px;
+  background-color: #5d0e0e;
+  font-size: 28px;
+  font-family: Cambria, serif;
+  color: #fff;
+  transition: 0.7s;
+}
+
+.b-login:hover {
+  animation-delay: 0.7s;
+  background-color: #07544BFF;
+  animation-name: colors;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.24), 0 3px 3px 0 rgba(0,0,0,0.19);
+  cursor: pointer;
+}
+
+.b-signup {
+  margin: 5px;
+  width: 120px;
+  height: 50px;
+  border: 2px solid #fff;
+  outline: 1px solid #999;
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.24), 1px 0 0 1px rgba(0,0,0,0.19);
+  border-radius: 8px;
+  background-color: #072B5DFF;
+  font-size: 28px;
+  font-family: Cambria, serif;
+  color: #fff;
+  transition: 0.7s;
+}
+
+.b-signup:hover {
+  animation-delay: 0.7s;
+  background-color: #07544BFF;
+  animation-name: colors;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.24), 0 3px 3px 0 rgba(0,0,0,0.19);
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+@keyframes colors {
+  0% {background-color: #07544BFF}
+  50% {background-color: #297e8f}
+  100% {background-color: #07544BFF}
+}

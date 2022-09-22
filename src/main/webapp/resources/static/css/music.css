@@ -1,0 +1,138 @@
+body {
+  margin-top: 67px;
+  display: flex;
+  flex-direction: column;
+}
+
+.music-container {
+  margin: 3px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.box-music {
+  display: flex;
+  width: 50%;
+  height: 60px;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+}
+
+.box-music img {
+  width: 45px;
+  height: 45px;
+  padding-top: 8px;
+  padding-left: 27px;
+  padding-right: 27px;
+}
+
+.play {
+  display: flex;
+  background: url(../icons/play-button.png) no-repeat 10px 6px;
+  background-size: 70%;
+  width: 70px;
+  min-width: 60px;
+  height: 56px;
+  margin: 2px;
+  border: none;
+  border-radius: 5px;
+  border-right: 1px solid #eee;
+  transition: 0.1s;
+}
+
+.play:hover {
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.play:active {
+  box-shadow: 0 1px 1px 1px rgba(255,255,255,0.10), 0 1px 1px 0 rgba(255,255,255,0.10);
+}
+
+.pause {
+  background: url(../icons/pause-button.png) no-repeat 10px 6px;
+  background-size: 70%;
+  width: 70px;
+  min-width: 60px;
+  height: 56px;
+  margin: 2px;
+  border: none;
+  border-radius: 5px;
+  border-right: 1px solid #eee;
+  transition: 0.1s;
+}
+
+.name-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.song-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 80%;
+  height: 62px;
+  font-family: Cambria serif;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.author {
+  font-size: 1.375em;
+  color: #ddd;
+  min-width: 10em;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #888;
+}
+
+.song {
+  min-width: 10em;
+  color: #ccc;
+  display: flex;
+  margin: 0;
+  font-style: italic;
+  padding: 0;
+  font-size: 1.25em;
+}
+
+.info-add {
+  display: flex;
+  flex-direction: row;
+}
+
+.info-music {
+  display: flex;
+  margin: 0;
+  width: auto;
+  font-family: Cambria serif;
+  font-size: 16px;
+  color: #aaa;
+  font-style: italic;
+  padding: 18px 20px 18px 5px;
+}
+
+.add {
+  display: flex;
+  background: url(../icons/add-button.png) no-repeat 9px 6px;
+  background-size: 70%;
+  border: none;
+  border-radius: 5px;
+  border-left: 1px solid #eee;
+  height: 56px;
+  width: 60px;
+  margin: 2px;
+  transition: 0.1s;
+}
+
+.add:hover {
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.add:active {
+  box-shadow: 0 1px 1px 1px rgba(255,255,255,0.10), 0 1px 1px 0 rgba(255,255,255,0.10);
+}

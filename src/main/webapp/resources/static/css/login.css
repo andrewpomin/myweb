@@ -1,0 +1,84 @@
+.outer {
+  margin: 15vh 30vw 15vh 25vw;
+  padding: 5%;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.description {
+  width: 100px;
+  font-size: 1.5em;
+}
+
+.action {
+  display: flex;
+  flex-direction: column;
+}
+
+.object {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 10px;
+  font-family: Cambria serif;
+  color: #084349;
+}
+
+input {
+  padding-left: 5px;
+  width: 280px;
+  height: 28px;
+  border: 2px solid #084349;
+  border-radius: 8px;
+  color: #084349;
+  font-size: 1.15em;
+  transition: 0.5s;
+  outline: none;
+}
+
+.button {
+  width: 96px;
+  margin-left: 195px;
+  border: 2px solid #084349;
+  border-radius: 8px;
+  background-color: #fff;
+  font-size: 1.5em;
+  font-family: Cambria serif;
+  color: #084349;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: #084349;
+  color: #fff;
+  border-color: #fff;
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.24), 0 3px 3px 0 rgba(0,0,0,0.19);
+  cursor: pointer;
+}
+
+.buttonSignUp {
+  width: 96px;
+  margin-left: 195px;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  background-color: #fff;
+  font-size: 1.5em;
+  font-family: Cambria serif;
+  color: #1e5878;
+  transition: 0.3s;
+}
+
+.buttonSignUp:hover {
+  border-radius: 8px;
+  background-color: #1e5878;
+  color: #fff;
+  border-color: #fff;
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.24), 0 3px 3px 0 rgba(0,0,0,0.19);
+  cursor: pointer;
+}

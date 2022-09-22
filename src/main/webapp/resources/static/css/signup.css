@@ -1,0 +1,59 @@
+.outer {
+  margin: 12vh 30vw 12vh 25vw;
+  padding: 5%;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.description {
+  width: 165px;
+  font-size: 1.5em;
+  display: flex;
+  margin-right: 10px;
+}
+
+.object {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 10px;
+  font-family: Cambria serif;
+  color: #1e5878;
+}
+
+input {
+  padding-left: 5px;
+  width: 280px;
+  height: 28px;
+  border: 2px solid #1e5878;
+  border-radius: 8px;
+  color: #1e5878;
+  font-size: 1.15em;
+  transition: 0.5s;
+  outline: none;
+}
+
+.button {
+  width: 96px;
+  border: 2px solid #1e5878;
+  border-radius: 8px;
+  background-color: #fff;
+  font-size: 1.5em;
+  font-family: Cambria serif;
+  color: #1e5878;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: #1e5878;
+  color: #fff;
+  border-color: #fff;
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.24), 0 3px 3px 0 rgba(0,0,0,0.19);
+  cursor: pointer;
+}
