@@ -139,9 +139,9 @@ img.account:hover {
   width: 250px;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
   z-index: 1;
-  border: 2px solid #fff;
+  border: 2px solid #ddd;
   border-radius: 10px;
-  outline: 1px solid #ddd;
+  outline: 1px solid #fff;
 }
 
 .menu a {
@@ -154,13 +154,13 @@ img.account:hover {
   font-family: Cambria serif;
   text-decoration: none;
   color: #fff;
-  background-color: #07544Bff;
+  background-color: #1e5878;
 }
 
 .menu a:hover {
   background-color: #297e8f;
 }
-
+/*07544Bff*/
 .menu a:first-child {
   border-top-right-radius: 6px;
   border-top-left-radius: 6px;
@@ -198,7 +198,7 @@ img.account:hover {
   font-family: Cambria serif;
   text-decoration: none;
   color: #fff;
-  background-color: #07544Bff;
+  background-color: #1e5878;
 
                     /* temporary */
   /* pointer-events: none;
