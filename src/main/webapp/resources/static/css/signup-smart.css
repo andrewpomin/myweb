@@ -1,0 +1,23 @@
+.object {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.description {
+    width: auto;
+}
+
+.button {
+    margin-left: 0;
+    font-size: 1.4em;
+}
+
+#outer-span {
+    width: 0;
+}
+
+#inner-span {
+    margin-left: 0;
+}

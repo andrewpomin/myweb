@@ -48,7 +48,7 @@ if (request.getParameter("error") != null) {
       <form action="${pageContext.request.contextPath}/signup" class="action">
       <label class="object">
         <span style="width: 100px"></span>
-        <span style="margin-left: 271px; font-size: 1.5em">or</span>
+        <span class ="or">or</span>
       </label>
       <label class="object">
         <span style="width: 100px"></span>

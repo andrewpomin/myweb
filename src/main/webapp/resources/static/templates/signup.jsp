@@ -61,10 +61,10 @@
       </label>
       <label class="object">
         <span style="width: 165px; margin-right: 10px"></span>
-        <span style="width: 291px">
-      <span style="margin-left: 195px"></span>
-      <button class="button" type="submit">Sign Up</button>
-    </span>
+        <span id="outer-span">
+          <span id="inner-span"></span>
+          <button class="button" type="submit">Sign Up</button>
+        </span>
       </label>
   </div>
 </div>

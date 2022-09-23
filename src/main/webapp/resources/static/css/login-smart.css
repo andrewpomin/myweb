@@ -1,0 +1,25 @@
+.object {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.description {
+    width: auto;
+}
+
+.button {
+    margin-left: 0;
+    font-size: 1.4em;
+}
+
+.or {
+    margin-left: 0;
+    font-size: 1.5em;
+}
+
+.buttonSignUp {
+    margin-left: 0;
+    font-size: 1.4em;
+}
