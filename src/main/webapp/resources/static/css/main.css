@@ -1,6 +1,7 @@
 html {
-  background-image: url(../icons/back.png);
-  background-repeat: repeat;
+  /*background-image: url(../icons/back.png);*/
+  /*background-repeat: repeat;*/
+  background-color: #1f1f1f;
   height: -webkit-fill-available;
 }
 

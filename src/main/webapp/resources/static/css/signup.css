@@ -47,8 +47,7 @@ input {
   border: 2px solid #176cc1;
   border-radius: 8px;
   color: #ddd;
-  background-image: url(../icons/back.png);
-  background-repeat: repeat;
+  background-color: #1f1f1f;
   font-size: 1.15em;
   transition: 0.5s;
   outline: none;
@@ -65,9 +64,7 @@ input {
   height: 1.5em;
   border: 2px solid #297e8f;
   border-radius: 8px;
-  background-color: #1e5878;
-  background-image: url(../icons/back.png);
-  background-repeat: repeat;
+  background-color: #1f1f1f;
   font-size: 1.5em;
   font-family: Cambria serif;
   color: #ddd;
@@ -76,6 +73,7 @@ input {
 
 .button:hover {
   background-image: none;
+  background-color: #1e5878;
   color: #fff;
   border-color: #fff;
   box-shadow: 0 3px 3px 0 rgba(0,0,0,0.24), 0 3px 3px 0 rgba(0,0,0,0.19);

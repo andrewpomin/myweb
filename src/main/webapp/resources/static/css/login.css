@@ -47,8 +47,7 @@ input {
   font-size: 1.15em;
   transition: 0.5s;
   outline: none;
-  background-image: url(../icons/back.png);
-  background-repeat: repeat;
+  background-color: #1f1f1f;
 }
 
 ::placeholder {
@@ -63,9 +62,7 @@ input {
   margin-left: 195px;
   border: 2px solid #176cc1;
   border-radius: 8px;
-  background-color: #084349;
-  background-image: url(../icons/back.png);
-  background-repeat: repeat;
+  background-color: #1f1f1f;
   font-size: 1.5em;
   font-family: Cambria serif;
   color: #ddd;
@@ -74,6 +71,7 @@ input {
 
 .button:hover {
   background-image: none;
+  background-color: #084349;
   color: #fff;
   border-color: #fff;
   box-shadow: 0 3px 3px 0 rgba(0,0,0,0.24), 0 3px 3px 0 rgba(0,0,0,0.19);
@@ -86,9 +84,7 @@ input {
   margin-left: 195px;
   border: 2px solid #297e8f;
   border-radius: 8px;
-  background-color: #1e5878;
-  background-image: url(../icons/back.png);
-  background-repeat: repeat;
+  background-color: #1f1f1f;
   font-size: 1.5em;
   font-family: Cambria serif;
   color: #ddd;
@@ -98,6 +94,7 @@ input {
 .buttonSignUp:hover {
   background-image: none;
   border-radius: 8px;
+  background-color: #1e5878;
   color: #fff;
   border-color: #fff;
   box-shadow: 0 3px 3px 0 rgba(0,0,0,0.24), 0 3px 3px 0 rgba(0,0,0,0.19);

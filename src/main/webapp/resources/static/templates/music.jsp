@@ -6,6 +6,7 @@
   Body body = new Body();
   Music music = new Music();
   PrintWriter pw = response.getWriter();
+  pw.write(body.getNavigation());
 %>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,9 +23,6 @@
   <link rel="stylesheet" type="text/css" media="screen and (max-device-width:720px)" href="../css/music-smart.css">
 </head>
 <body>
-<%
-  pw.write(body.getNavigation());
-%>
 
 
   <%

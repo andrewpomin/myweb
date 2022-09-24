@@ -12,6 +12,7 @@
 .button {
     margin-left: 0;
     font-size: 1.4em;
+    outline: none;
 }
 
 .or {
@@ -22,4 +23,8 @@
 .buttonSignUp {
     margin-left: 0;
     font-size: 1.4em;
+}
+
+.buttonSignUp:active {
+
 }

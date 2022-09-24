@@ -1,14 +1,18 @@
 body {
+  height: -webkit-fill-available;
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 .flex-container {
-  min-height: 45em;
+  height: inherit;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+  bottom: 10%;
 }
 
 .i-want {
