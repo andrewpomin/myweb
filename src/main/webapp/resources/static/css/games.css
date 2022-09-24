@@ -36,16 +36,16 @@ body {
   position: relative;
 }
 
-.line2 h1 {
+#text {
   padding-left: 10px;
   padding-right: 10px;
   color: #fff;
-  position: absolute;
+  position: relative;
   align-self: center;
   left: auto;
   top: auto;
   right: auto;
-  bottom: auto;
+  bottom: 50%;
   font-size: 30px;
   font-family: Cambria, serif;
   border-radius: 8px;

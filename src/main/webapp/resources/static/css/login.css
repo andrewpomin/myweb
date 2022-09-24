@@ -49,7 +49,6 @@ input {
   outline: none;
   background-image: url(../icons/back.png);
   background-repeat: repeat;
-  background-size: 1px 1px;
 }
 
 ::placeholder {
@@ -60,13 +59,13 @@ input {
 
 .button {
   width: 96px;
+  height: 1.5em;
   margin-left: 195px;
   border: 2px solid #176cc1;
   border-radius: 8px;
   background-color: #084349;
   background-image: url(../icons/back.png);
   background-repeat: repeat;
-  background-size: 1px 1px;
   font-size: 1.5em;
   font-family: Cambria serif;
   color: #ddd;
@@ -83,13 +82,13 @@ input {
 
 .buttonSignUp {
   width: 96px;
+  height: 1.5em;
   margin-left: 195px;
   border: 2px solid #297e8f;
   border-radius: 8px;
   background-color: #1e5878;
   background-image: url(../icons/back.png);
   background-repeat: repeat;
-  background-size: 1px 1px;
   font-size: 1.5em;
   font-family: Cambria serif;
   color: #ddd;

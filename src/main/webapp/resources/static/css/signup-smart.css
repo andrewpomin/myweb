@@ -15,7 +15,7 @@
 }
 
 #outer-span {
-    width: 0;
+    width: auto;
 }
 
 #inner-span {

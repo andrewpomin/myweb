@@ -58,7 +58,6 @@
         <div class="cell" id="cell3" onclick="setFigure(id)"></div>
       </div>
       <div class="line2">
-        <h1 id="text" hidden></h1>
         <div class="line" id="line2">
           <div class="cell" id="cell4" onclick="setFigure(id)"></div>
           <div class="cell" id="cell5" onclick="setFigure(id)"></div>
@@ -70,6 +69,7 @@
         <div class="cell" id="cell8" onclick="setFigure(id)"></div>
         <div class="cell" id="cell9" onclick="setFigure(id)"></div>
       </div>
+      <h1 id="text" hidden></h1>
     </div>
     <button class="b" type="button" name="new-tic-tac" onclick="newTicTac()">New Game</button>
   </div>
