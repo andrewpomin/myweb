@@ -22,6 +22,7 @@ if (request.getParameter("error") != null) {
   <link rel="stylesheet" type="text/css" href="../css/main.css"/>
   <link rel="stylesheet" type="text/css" media="screen and (max-device-width:720px)" href="../css/main-smart.css">
   <link rel="stylesheet" href="../css/login.css" type="text/css" />
+  <link rel="stylesheet" type="text/css" media="screen and (max-device-width:720px)" href="../css/login-smart.css">
 </head>
 <body>
   <div class="outer">

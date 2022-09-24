@@ -21,7 +21,8 @@
   <link rel="icon" href="../icons/icon-my.png" type="image/png" sizes="64x64">
   <link rel="stylesheet" type="text/css" href="../css/main.css"/>
   <link rel="stylesheet" type="text/css" media="screen and (max-device-width:720px)" href="../css/main-smart.css">
-    <link rel="stylesheet" type="text/css" href="../css/signup.css"/>
+  <link rel="stylesheet" type="text/css" href="../css/signup.css"/>
+  <link rel="stylesheet" type="text/css" media="screen and (max-device-width:720px)" href="../css/signup-smart.css">
 </head>
 <body>
   <form action="${pageContext.request.contextPath}/user/register" method="post">
