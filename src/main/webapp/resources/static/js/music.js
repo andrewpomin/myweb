@@ -16,6 +16,7 @@ function startStop(element) {
         song.play();
         document.getElementById("play_" + element).classList.toggle("pause");
         song.onended = (event) => {
+            States.songPlaying = null;
             document.getElementById("play_" + element).classList.toggle("pause");
             let nextContainer = document.getElementById("play_" + element).parentElement.parentElement.nextSibling;
             console.log(nextContainer);
