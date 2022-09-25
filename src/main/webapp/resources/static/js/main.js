@@ -36,6 +36,7 @@ window.onclick = function(event) {
 
 function startStop(element) {
   let song = document.getElementById(element);
+  let duration = song.duration;
   if (song.paused) {
     song.play();
     document.getElementById("play_" + element).classList.toggle("pause");

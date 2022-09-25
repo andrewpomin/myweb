@@ -15,7 +15,6 @@ public class Music {
 
         for (int i = 0; i < aw.getListSize(list); i++) {
             S3Object object = list.get(i);
-            object.size().
             String key = aw.getObjectKey(object);
             body.append(addSong(key));
         }
