@@ -43,8 +43,16 @@ public class Music {
                 }
             }
             S3Object object = list.get(random);
-            String key = aw.getObjectKey(object);
-            body.append(addSong(key));
+            String templateKey = aw.getObjectKey(object);
+            StringBuilder key = new StringBuilder();
+            for (char c : templateKey.toCharArray()) {
+                if (c == '\'') {
+                    key.append("__");
+                } else {
+                    key.append(c);
+                }
+            }
+            body.append(addSong(key.toString()));
             randomArray[random] = -1;
         }
         return String.valueOf(body);
@@ -67,7 +75,7 @@ public class Music {
                 "src=\"" + aw.getURL(key) + "\"></audio>" +
                 "</div>" +
                 "<div class=\"info-add\">" +
-                "<div class=\"info-music\" id=\"info_" + songName + "\" onload=\"getDuration('" + songName + "')\"></div>" +
+                "<div class=\"info-music\" id=\"info_" + songName + "\" onclick=\"getDuration('" + songName + "')\"></div>" +
                 "<button class=\"add\"></button>" +
                 "</div>" +
                 "</div>" +

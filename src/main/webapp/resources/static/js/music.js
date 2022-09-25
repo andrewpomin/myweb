@@ -21,7 +21,7 @@ function startStop(element) {
             console.log(nextContainer);
             let next = nextContainer.firstChild.firstChild;
             console.log(next);
-            let id = next.id;
+            let id = next.id.substring(5);
             console.log(id);
             startStop(id);
         }
