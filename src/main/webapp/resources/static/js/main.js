@@ -33,26 +33,3 @@ window.onclick = function(event) {
     }
   }
 }
-
-function startStop(element) {
-  let song = document.getElementById(element);
-  let duration = song.duration;
-  if (song.paused) {
-    song.play();
-    document.getElementById("play_" + element).classList.toggle("pause");
-    song.onended = (event) => {
-      document.getElementById("play_" + element).classList.toggle("pause");
-      document.getElementById("play_" + element.nextSibling).classList.toggle("pause");
-      document.getElementById("play_" + element.nextSibling).click();
-    }
-  } else {
-    song.pause();
-    document.getElementById("play_" + element).classList.toggle("pause");
-  }
-}
-
-// function duration() {
-//  var audio = document.getElementById(element);
-//  var time = Math.floor(audio.duration / 60) + ':' + Math.ceil(audio.duration % 60);
-//  console.log(document.getElementById('info-music').innerHTML = time);
-// }
