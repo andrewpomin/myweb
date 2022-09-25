@@ -8,9 +8,9 @@ function startStop(element) {
         States.songPlaying.pause();
         let templateId = "play_" + States.songPlaying.id;
         document.getElementById(templateId).classList.toggle("pause");
-    }
+    } else {
 
-    // if (song.paused) {
+        // if (song.paused) {
         States.songPlaying = song;
         song.play();
         document.getElementById("play_" + element).classList.toggle("pause");
@@ -24,6 +24,7 @@ function startStop(element) {
             console.log(id);
             startStop(id);
         }
+    }
     // } else {
     //     song.pause();
     //     document.getElementById("play_" + element).classList.toggle("pause");
