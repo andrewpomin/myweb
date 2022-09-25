@@ -11,13 +11,13 @@ body {
   align-items: center;
   align-content: center;
   justify-content: center;
-  min-height: 45em;
   display: flex;
   flex-direction: column;
+  position: relative;
+  top: 10%;
 }
 
 .groups {
-  margin-top: 180px;
   width: 400px;
   display: flex;
   justify-content: space-between;

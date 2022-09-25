@@ -32,6 +32,8 @@ body {
 .menu-home {
   display: flex;
   flex-direction: row;
+  position: relative;
+  left: 5px;
 }
 
 .menu-box {

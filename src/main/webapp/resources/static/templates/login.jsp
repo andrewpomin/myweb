@@ -37,7 +37,7 @@ if (request.getParameter("error") != null) {
         <input class="input" type="password" name="password" placeholder="password" autocomplete="current-password">
       </label>
       <label class="object">
-        <span style="width: 100px"></span>
+        <span class="before-wrong"></span>
         <span class="wrong" <%= attribute %>>
         *Wrong email or password</span>
       </label>
