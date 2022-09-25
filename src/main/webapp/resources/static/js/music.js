@@ -27,5 +27,5 @@ function startStop(element) {
 }
 
 function getDuration(id) {
-    document.getElementById(id).innerText = document.getElementById(id).duration;
+    document.getElementById("info_" + id).innerText = document.getElementById("play_" + id).duration;
 }
