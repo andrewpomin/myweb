@@ -4,10 +4,9 @@ class States {
 
 function startStop(element) {
     let song = document.getElementById(element);
-    if (States.songPlaying !== null) {
+    if (States.songPlaying !== null && !States.songPlaying.paused) {
         States.songPlaying.pause();
         States.songPlaying.classList.toggle("pause");
-        States.songPlaying = null;
     }
 
     switcher(song);
@@ -32,10 +31,9 @@ function switcher(song) {
 }
 
 function startElement(element) {
-    if (States.songPlaying !== null) {
+    if (States.songPlaying !== null && !States.songPlaying.paused) {
         States.songPlaying.pause();
         States.songPlaying.classList.toggle("pause");
-        States.songPlaying = null;
     }
 
     switcher(element);
