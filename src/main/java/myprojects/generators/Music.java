@@ -12,12 +12,12 @@ public class Music {
         AmazonWorker aw = new AmazonWorker();
         List<S3Object> list = aw.getObjectsList();
         StringBuilder body = new StringBuilder();
-        Music music = new Music();
 
         for (int i = 0; i < aw.getListSize(list); i++) {
             S3Object object = list.get(i);
+            object.size().
             String key = aw.getObjectKey(object);
-            body.append(music.addSong(key));
+            body.append(addSong(key));
         }
         return String.valueOf(body);
     }

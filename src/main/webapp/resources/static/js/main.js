@@ -25,7 +25,7 @@ window.onclick = function(event) {
 
     let dropdowns2 = document.getElementsByClassName("account-list");
     let j;
-    for (j = 0; i < dropdowns2.length; j++) {
+    for (j = 0; j < dropdowns2.length; j++) {
       let openDropdown2 = dropdowns2[j];
       if (openDropdown2.classList.contains('show')) {
         openDropdown2.classList.remove('show');
