@@ -38,12 +38,12 @@ if (request.getParameter("error") != null) {
       </label>
       <label class="object">
         <span style="width: 100px"></span>
-        <button type="submit" class="button">Log In</button>
+        <span class="wrong" <%= attribute %>>
+        *Wrong email or password</span>
       </label>
       <label class="object">
         <span style="width: 100px"></span>
-        <span style="width: 176px; color: #b40e0e; font-size: 16px; margin-left: 115px;" <%= attribute %>>
-          *Wrong email or password</span>
+        <button type="submit" class="button">Log In</button>
       </label>
       </form>
       <form action="${pageContext.request.contextPath}/signup" class="action">

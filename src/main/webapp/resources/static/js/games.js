@@ -54,7 +54,7 @@ function setFigure(id) {
             document.getElementById("text").innerText = responseString;
 
           }
-          document.getElementById("end-text").bottom = 50%;
+          document.getElementById("end-text").setAttribute("bottom", "50%");
           document.getElementById("text").hidden = false;
 
           //If game is continue
@@ -93,6 +93,6 @@ function newTicTac() {
     let cell = "cell" + (i + 1);
     document.getElementById(cell).className = "cell";
     document.getElementById("text").hidden = true;
-    document.getElementById("end-text").bottom = 0;
+    document.getElementById("end-text").setAttribute("bottom", "0");
   }
 }

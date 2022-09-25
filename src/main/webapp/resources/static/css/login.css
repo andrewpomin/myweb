@@ -1,5 +1,5 @@
 body {
-  height: inherit;
+  height: -webkit-fill-available;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,6 +54,13 @@ input {
   color: #bbb;
   opacity: 1;
   font-style: italic;
+}
+
+.wrong {
+  width: 176px;
+  color: #b40e0e;
+  font-size: 16px;
+  margin-left: 115px;
 }
 
 .button {

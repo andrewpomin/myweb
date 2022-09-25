@@ -1,5 +1,5 @@
 body {
-  height: inherit;
+  height: -webkit-fill-available;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,7 +12,7 @@ form {
 }
 
 .outer {
-  padding: 5%;
+  /*padding: 5%;*/
 }
 
 .inner {
