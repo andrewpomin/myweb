@@ -6,6 +6,7 @@
   Body body = new Body();
   Music music = new Music();
   PrintWriter pw = response.getWriter();
+  pw.write("<link rel=\"icon\" href=\"../icons/icon-my.png\" type=\"image/png\" sizes=\"64x64\">");
   pw.write(body.getNavigation());
   pw.write("<div class=\"outer-container\">");
 %>
@@ -17,7 +18,7 @@
   <meta name="MobileOptimized" content="width">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Music</title>
-  <link rel="icon" href="../icons/icon-my.png" type="image/png" sizes="64x64">
+
   <link rel="stylesheet" type="text/css" href="../css/main.css">
   <link rel="stylesheet" type="text/css" media="screen and (max-device-width:720px)" href="../css/main-smart.css">
   <link rel="stylesheet" type="text/css" media="screen" href="../css/music.css">

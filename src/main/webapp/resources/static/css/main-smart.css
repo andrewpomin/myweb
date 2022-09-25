@@ -3,6 +3,10 @@ html {
     outline-style: none;
 }
 
+button {
+    outline: none;
+}
+
 .top-nav {
     background-color: #1b1c1e;
 }
