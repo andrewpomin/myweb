@@ -38,13 +38,13 @@ body {
 }
 
 input:-webkit-autofill {
-  background-color: #1b1c1e;
-  color: #ddd;
+  background-color: -moz-default-background-color !important;
+  -webkit-text-fill-color: #ddd;
 }
 
-input:autofill {
-  background-color: #1b1c1e;
-  color: #ddd;
+
+input:-internal-autofill-selected {
+  background-color: #1b1c1e !important;
 }
 
 input {
