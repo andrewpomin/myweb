@@ -37,9 +37,11 @@ body {
   color: #ddd;
 }
 
-input:-webkit-autofill{
-  -webkit-text-fill-color: #ddd !important;
-  background-color: #1b1c1e;
+input:-internal-autofill-selected {
+  appearance: menulist-button;
+  background-image: none !important;
+  background-color: #1b1c1e !important;
+  color: #ddd !important;
 }
 
 input {
