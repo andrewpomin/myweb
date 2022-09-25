@@ -21,6 +21,7 @@ function switcher(song) {
         song.onended = (event) => {
             song.classList.toggle("pause");
             let next = song.nextSibling;
+            console.log(next);
             startElement(next);
         }
     } else {
@@ -41,5 +42,6 @@ function startElement(element) {
 }
 
 function getDuration(id) {
-    document.getElementById("info_" + id).innerText = document.getElementById("play_" + id).duration;
+    document.getElementById("info_" + id).innerText = document.getElementById(id).duration;
+    console.log(document.getElementById(id).duration);
 }
