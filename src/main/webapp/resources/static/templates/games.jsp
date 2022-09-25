@@ -57,12 +57,10 @@
           <div class="cell" id="cell2" onclick="setFigure(id)"></div>
           <div class="cell" id="cell3" onclick="setFigure(id)"></div>
         </div>
-        <div class="line2">
-          <div class="line" id="line2">
-            <div class="cell" id="cell4" onclick="setFigure(id)"></div>
-            <div class="cell" id="cell5" onclick="setFigure(id)"></div>
-            <div class="cell" id="cell6" onclick="setFigure(id)"></div>
-          </div>
+        <div class="line" id="line2">
+          <div class="cell" id="cell4" onclick="setFigure(id)"></div>
+          <div class="cell" id="cell5" onclick="setFigure(id)"></div>
+          <div class="cell" id="cell6" onclick="setFigure(id)"></div>
         </div>
         <div class="line" id="line3">
           <div class="cell" id="cell7" onclick="setFigure(id)"></div>
