@@ -8,14 +8,14 @@ function myFunction2() {
     document.getElementById("account-list").classList.toggle("show");
 }
 
-// Close the dropdown if the user clicks outside of it
+// Close the dropdown if the user clicks outside it
 window.onclick = function(event) {
   if (!event.target.matches('.menu')) {
 
-    var dropdowns = document.getElementsByClassName("menu-list");
-    var i;
+    let dropdowns = document.getElementsByClassName("menu-list");
+    let i;
     for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
+      let openDropdown = dropdowns[i];
       if (openDropdown.classList.contains('show')) {
         openDropdown.classList.remove('show');
       }
@@ -23,12 +23,12 @@ window.onclick = function(event) {
   }
   if (!event.target.matches('.account')) {
 
-    var dropdowns = document.getElementsByClassName("account-list");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
+    let dropdowns2 = document.getElementsByClassName("account-list");
+    let j;
+    for (j = 0; i < dropdowns2.length; i++) {
+      let openDropdown2 = dropdowns2[i];
+      if (openDropdown2.classList.contains('show')) {
+        openDropdown2.classList.remove('show');
       }
     }
   }
@@ -38,12 +38,14 @@ function startStop(element) {
   let song = document.getElementById(element);
   let image = document.getElementsByClassName("play");
   if (song.paused) {
-    console.log(song);
-    // fetch('https://drive.google.com/file/d/1LNfVddaVK8EDz8ZB_9MC2NcGFkvb3SyY/view?usp=sharing', { mode: 'no-cors'});
     song.play();
     document.getElementById("play_" + element).classList.toggle("pause");
+    song.onended = (event) => {
+      document.getElementById("play_" + element).classList.toggle("pause");
+      document.getElementById("play_" + element.nextSibling).classList.toggle("pause");
+      document.getElementById("play_" + element.nextSibling).click();
+    }
   } else {
-    console.log(song);
     song.pause();
     document.getElementById("play_" + element).classList.toggle("pause");
   }

@@ -26,7 +26,6 @@ public class Music {
         AmazonWorker aw = new AmazonWorker();
         List<S3Object> list = aw.getObjectsList();
         StringBuilder body = new StringBuilder();
-        Music music = new Music();
 
         int size = aw.getListSize(list);
         int [] randomArray = new int[size];
@@ -46,7 +45,7 @@ public class Music {
             }
             S3Object object = list.get(random);
             String key = aw.getObjectKey(object);
-            body.append(music.addSong(key));
+            body.append(addSong(key));
             randomArray[random] = -1;
         }
         return String.valueOf(body);
