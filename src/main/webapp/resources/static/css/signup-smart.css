@@ -1,3 +1,10 @@
+body {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .object {
     display: flex;
     flex-direction: column;
@@ -12,7 +19,6 @@
 }
 
 .wrong {
-    margin-left: 0;
     width: auto;
     position: relative;
     right: 0;

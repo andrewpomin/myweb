@@ -3,7 +3,13 @@ html {
     outline-style: none;
 }
 
-button {
+.menu {
+    background-color: inherit;
+}
+
+button,
+button:focus,
+button:active {
     outline: none;
 }
 
