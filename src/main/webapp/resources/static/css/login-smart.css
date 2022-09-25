@@ -11,8 +11,8 @@
     font-size: 1.3em;
 }
 
-.before-wrong {
-    width: 0;
+.wrong {
+    margin-left: 0;
 }
 
 .button {
