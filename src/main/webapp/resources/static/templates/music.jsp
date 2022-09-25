@@ -34,7 +34,7 @@
     } else {
       pw.write(music.printMusic());
     }
-    
+
     pw.write("</div>");
   %>
 
