@@ -25,8 +25,8 @@ window.onclick = function(event) {
 
     let dropdowns2 = document.getElementsByClassName("account-list");
     let j;
-    for (j = 0; i < dropdowns2.length; i++) {
-      let openDropdown2 = dropdowns2[i];
+    for (j = 0; i < dropdowns2.length; j++) {
+      let openDropdown2 = dropdowns2[j];
       if (openDropdown2.classList.contains('show')) {
         openDropdown2.classList.remove('show');
       }
@@ -36,7 +36,6 @@ window.onclick = function(event) {
 
 function startStop(element) {
   let song = document.getElementById(element);
-  let image = document.getElementsByClassName("play");
   if (song.paused) {
     song.play();
     document.getElementById("play_" + element).classList.toggle("pause");
