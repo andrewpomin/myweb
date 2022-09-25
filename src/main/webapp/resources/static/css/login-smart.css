@@ -13,6 +13,7 @@
 
 .wrong {
     width: auto;
+    margin-left: auto;
     position: relative;
     right: 0;
 }
