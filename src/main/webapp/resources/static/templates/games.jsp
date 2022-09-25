@@ -49,31 +49,33 @@
     <img class="account" src="../icons/account.png">
   </div>
   </nav>
-
-  <div class="box">
-    <div class="zone">
-      <div class="line" id="line1">
-        <div class="cell" id="cell1" onclick="setFigure(id)"></div>
-        <div class="cell" id="cell2" onclick="setFigure(id)"></div>
-        <div class="cell" id="cell3" onclick="setFigure(id)"></div>
-      </div>
-      <div class="line2">
-        <div class="line" id="line2">
-          <div class="cell" id="cell4" onclick="setFigure(id)"></div>
-          <div class="cell" id="cell5" onclick="setFigure(id)"></div>
-          <div class="cell" id="cell6" onclick="setFigure(id)"></div>
+  <div class="outer-container">
+    <div class="box">
+      <div class="zone">
+        <div class="line" id="line1">
+          <div class="cell" id="cell1" onclick="setFigure(id)"></div>
+          <div class="cell" id="cell2" onclick="setFigure(id)"></div>
+          <div class="cell" id="cell3" onclick="setFigure(id)"></div>
         </div>
+        <div class="line2">
+          <div class="line" id="line2">
+            <div class="cell" id="cell4" onclick="setFigure(id)"></div>
+            <div class="cell" id="cell5" onclick="setFigure(id)"></div>
+            <div class="cell" id="cell6" onclick="setFigure(id)"></div>
+          </div>
+        </div>
+        <div class="line" id="line3">
+          <div class="cell" id="cell7" onclick="setFigure(id)"></div>
+          <div class="cell" id="cell8" onclick="setFigure(id)"></div>
+          <div class="cell" id="cell9" onclick="setFigure(id)"></div>
+        </div>
+        <h1 class="text" hidden></h1>
       </div>
-      <div class="line" id="line3">
-        <div class="cell" id="cell7" onclick="setFigure(id)"></div>
-        <div class="cell" id="cell8" onclick="setFigure(id)"></div>
-        <div class="cell" id="cell9" onclick="setFigure(id)"></div>
-      </div>
-      <h1 class="text"></h1>
+      <button class="b" type="button" name="new-tic-tac" onclick="newTicTac()">New Game</button>
     </div>
-    <button class="b" type="button" name="new-tic-tac" onclick="newTicTac()">New Game</button>
   </div>
 </body>
+
   <script src="../js/main.js" type="text/javascript"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   <script src="../js/games.js" type="text/javascript"></script>

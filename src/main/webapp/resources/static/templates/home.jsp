@@ -43,17 +43,19 @@
   </div>
   </nav>
 
-  <div class="flex-container">
-    <img class="i-want" src="../icons/want.png" alt="I want">
-<%--    <div class="groups">--%>
-<%--      <input class="search-line" name="search-main" type="search" tabindex="0">--%>
-<%--      <button id="button" type="button">Go</button>--%>
-<%--    </div>--%>
-    <div class="groups">
-      <button class="b2" type="button" name="random-music">
-        <a class="a-b2" href="${pageContext.request.contextPath}/music?sort=random">Random Music</a></button>
-      <button class="b2" type="button" name="random-game">
-        <a class="a-b2" href="${pageContext.request.contextPath}/games?random">Random Game</a></button>
+  <div class="outer-container">
+    <div class="flex-container">
+      <img class="i-want" src="../icons/want.png" alt="I want">
+  <%--    <div class="groups">--%>
+  <%--      <input class="search-line" name="search-main" type="search" tabindex="0">--%>
+  <%--      <button id="button" type="button">Go</button>--%>
+  <%--    </div>--%>
+      <div class="groups">
+        <button class="b2" type="button" name="random-music">
+          <a class="a-b2" href="${pageContext.request.contextPath}/music?sort=random">Random Music</a></button>
+        <button class="b2" type="button" name="random-game">
+          <a class="a-b2" href="${pageContext.request.contextPath}/games?random">Random Game</a></button>
+      </div>
     </div>
   </div>
 

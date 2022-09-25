@@ -7,6 +7,7 @@
   Music music = new Music();
   PrintWriter pw = response.getWriter();
   pw.write(body.getNavigation());
+  pw.write("<div class=\"outer-container\">");
 %>
 <!DOCTYPE html>
 <html lang="en">
@@ -33,6 +34,8 @@
     } else {
       pw.write(music.printMusic());
     }
+    
+    pw.write("</div>");
   %>
 
 <script src="../js/main.js"></script>

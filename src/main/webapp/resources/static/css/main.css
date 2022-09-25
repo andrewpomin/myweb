@@ -12,6 +12,10 @@ body {
   padding: 0 5px 0 5px;
 }
 
+.outer-container {
+  height: -webkit-fill-available;
+}
+
 .top-nav {
   padding-top: 5px;
   margin-bottom: 5px;
