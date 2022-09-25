@@ -7,10 +7,10 @@ function startStop(element) {
     if (States.songPlaying !== null && !States.songPlaying.paused) {
         States.songPlaying.pause();
         let templateId = "play_" + States.songPlaying.id;
-        document.getElementById("play_" + templateId).classList.toggle("pause");
+        document.getElementById(templateId).classList.toggle("pause");
     }
 
-    if (song.paused) {
+    // if (song.paused) {
         States.songPlaying = song;
         song.play();
         document.getElementById("play_" + element).classList.toggle("pause");
@@ -24,10 +24,10 @@ function startStop(element) {
             console.log(id);
             startStop(id);
         }
-    } else {
-        song.pause();
-        document.getElementById("play_" + element).classList.toggle("pause");
-    }
+    // } else {
+    //     song.pause();
+    //     document.getElementById("play_" + element).classList.toggle("pause");
+    // }
 
     // switcher(song);
 }
