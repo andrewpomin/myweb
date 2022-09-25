@@ -16,7 +16,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Sign Up</title>
-  <meta name ="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+  <meta name ="viewport" content="width=device-width, initial-scale=1, user-scalable=1" />
   <meta name="MobileOptimized" content="width">
   <link rel="icon" href="../icons/icon-my.png" type="image/png" sizes="64x64">
   <link rel="stylesheet" type="text/css" href="../css/main.css"/>
@@ -57,8 +57,7 @@
     </label>
       <label class="object">
         <span style="width: 165px; margin-right: 10px"></span>
-        <span style="width: 130px; margin-left: 161px; font-size: 16px;
-        color: #b40e0e" <%= attribute %>>*User already exists</span>
+        <span class="wrong" <%= attribute %>>*User already exists</span>
       </label>
       <label class="object">
         <span style="width: 165px; margin-right: 10px"></span>

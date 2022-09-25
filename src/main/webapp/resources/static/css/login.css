@@ -41,6 +41,7 @@ input:-webkit-autofill {
   background-color: #1b1c1e;
   color: #ddd;
 }
+
 input:autofill {
   background-color: #1b1c1e;
   color: #ddd;

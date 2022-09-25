@@ -59,6 +59,13 @@ input {
   font-style: italic;
 }
 
+.wrong {
+  width: 130px;
+  margin-left: 161px;
+  font-size: 16px;
+  color: #b40e0e;
+}
+
 .button {
   width: 96px;
   height: 1.5em;

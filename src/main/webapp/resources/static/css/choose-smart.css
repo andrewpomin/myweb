@@ -2,13 +2,9 @@ body {
   display: flex;
 }
 
-/*.flex-container {*/
-/*  min-height: 43em;*/
-/*  display: flex;*/
-/*  flex-direction: column;*/
-/*  justify-content: center;*/
-/*  align-items: center;*/
-/*}*/
+.flex-container {
+  top: 0;
+}
 
 .groups {
   margin-top: 165px;

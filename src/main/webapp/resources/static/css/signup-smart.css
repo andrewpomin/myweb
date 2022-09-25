@@ -11,6 +11,10 @@
     font-size: 1.4em;
 }
 
+.wrong {
+    margin-left: 0;
+}
+
 .button {
     margin-left: 0;
     font-size: 1.4em;
