@@ -1,10 +1,6 @@
-/*body {*/
-/*  background-image: url(../icons/morpheus.jpg);*/
-/*  background-repeat: no-repeat;*/
-/*  background-position: center;*/
-/*  background-size: cover;*/
-/*  display: flex;*/
-/*}*/
+body {
+  display: flex;
+}
 
 /*.flex-container {*/
 /*  min-height: 43em;*/
@@ -14,32 +10,32 @@
 /*  align-items: center;*/
 /*}*/
 
-/*.groups {*/
-/*  margin-top: 165px;*/
-/*  width: 100%;*/
-/*  display: flex;*/
-/*  justify-content: space-between;*/
-/*}*/
+.groups {
+  margin-top: 165px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
 
-/*.form {*/
-/*  margin: 25px;*/
-/*  position: sticky;*/
-/*}*/
+.form {
+  margin: 25px;
+  /*position: sticky;*/
+}
 
-/*.b-login {*/
-/*  margin: 5px;*/
-/*  width: 120px;*/
-/*  height: 46px;*/
-/*  border: 2px solid #fff;*/
-/*  outline: 1px solid #999;*/
-/*  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.24), 1px 0 0 1px rgba(0,0,0,0.19);*/
-/*  border-radius: 8px;*/
-/*  background-color: #5d0e0e;*/
-/*  font-size: 20px;*/
-/*  font-family: Cambria, serif;*/
-/*  color: #fff;*/
-/*  transition: 0.7s;*/
-/*}*/
+.b-login {
+  /*margin: 5px;*/
+  /*width: 120px;*/
+  height: 46px;
+  /*border: 2px solid #fff;*/
+  /*outline: 1px solid #999;*/
+  /*box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.24), 1px 0 0 1px rgba(0,0,0,0.19);*/
+  /*border-radius: 8px;*/
+  /*background-color: #5d0e0e;*/
+  font-size: 20px;
+  /*font-family: Cambria, serif;*/
+  /*color: #fff;*/
+  /*transition: 0.7s;*/
+}
 
 /*.b-login:hover {*/
 /*  animation-delay: 0.7s;*/
@@ -51,20 +47,20 @@
 /*  cursor: pointer;*/
 /*}*/
 
-/*.b-signup {*/
-/*  margin: 5px;*/
-/*  width: 120px;*/
-/*  height: 46px;*/
-/*  border: 2px solid #fff;*/
-/*  outline: 1px solid #999;*/
-/*  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.24), 1px 0 0 1px rgba(0,0,0,0.19);*/
-/*  border-radius: 8px;*/
-/*  background-color: #072B5DFF;*/
-/*  font-size: 20px;*/
-/*  font-family: Cambria, serif;*/
-/*  color: #fff;*/
-/*  transition: 0.7s;*/
-/*}*/
+.b-signup {
+  /*margin: 5px;*/
+  /*width: 120px;*/
+  height: 46px;
+  /*border: 2px solid #fff;*/
+  /*outline: 1px solid #999;*/
+  /*box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.24), 1px 0 0 1px rgba(0,0,0,0.19);*/
+  /*border-radius: 8px;*/
+  /*background-color: #072B5DFF;*/
+  font-size: 20px;
+  /*font-family: Cambria, serif;*/
+  /*color: #fff;*/
+  /*transition: 0.7s;*/
+}
 
 /*.b-signup:hover {*/
 /*  animation-delay: 0.7s;*/

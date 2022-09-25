@@ -37,14 +37,13 @@ body {
   color: #ddd;
 }
 
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus {
-  appearance: menulist-button;
-  background-image: none !important;
-  background-color: #1b1c1e !important;
-  color: #ddd !important;
-  font-size: 1.15em;
+input:-webkit-autofill {
+  background-color: #1b1c1e;
+  color: #ddd;
+}
+input:autofill {
+  background-color: #1b1c1e;
+  color: #ddd;
 }
 
 input {
