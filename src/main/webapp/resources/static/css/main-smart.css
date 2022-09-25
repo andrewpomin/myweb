@@ -1,6 +1,5 @@
 html {
     -webkit-tap-highlight-color: transparent;
-    outline-style: none;
 }
 
 .menu {
@@ -13,7 +12,7 @@ p,
 a,
 form,
 button {
-    outline: none;
+    outline: none !important;
 }
 
 .top-nav {
