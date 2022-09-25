@@ -1,5 +1,5 @@
 class States {
-    static songPlaying;
+    static songPlaying = null;
 }
 
 function startStop(element) {
