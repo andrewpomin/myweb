@@ -37,5 +37,5 @@ function startStop(element) {
 
 function getDuration(id) {
     let temp = document.getElementById(id).duration;
-    document.getElementById("info_" + id).innerHTML = (temp / 60).toString() + (temp % 60).toString();
+    document.getElementById("info_" + id).innerHTML = (temp / 60).toString() + ":" + (temp % 60).toString();
 }

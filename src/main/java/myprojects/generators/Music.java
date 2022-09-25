@@ -46,8 +46,8 @@ public class Music {
             String templateKey = aw.getObjectKey(object);
             StringBuilder key = new StringBuilder();
             for (char c : templateKey.toCharArray()) {
-                if (c == '\'') {
-                    key.append("__");
+                if (c == '\\') {
+                    key.append("%");
                 } else {
                     key.append(c);
                 }
@@ -59,6 +59,15 @@ public class Music {
     }
 
     public String addSong(String key) {
+        StringBuilder url = new StringBuilder();
+        for (char c : key.toCharArray()) {
+            if (c == '%') {
+                url.append("'");
+            } else {
+                url.append(c);
+            }
+        }
+
         AmazonWorker aw = new AmazonWorker();
         String songName = key.substring(key.indexOf('/') + 1);
         String author = songName.substring(0, songName.indexOf('-') - 1);
@@ -72,7 +81,7 @@ public class Music {
                 "<p class=\"author\">" + author + "</p>" +
                 "<p class=\"song\">" + name + "</p>" +
                 "<audio id=\"" + songName + "\"" +
-                "src=\"" + aw.getURL(key) + "\"></audio>" +
+                "src=\"" + aw.getURL(String.valueOf(url)) + "\"></audio>" +
                 "</div>" +
                 "<div class=\"info-add\">" +
                 "<div class=\"info-music\" id=\"info_" + songName + "\" onload=\"getDuration('" + songName + "')\"></div>" +
