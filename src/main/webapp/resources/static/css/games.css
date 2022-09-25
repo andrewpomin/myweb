@@ -22,16 +22,19 @@
   height: 150px;
 }
 
+.end-text {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 50%;
+  height: 35px;
+}
+
 .text {
   padding-left: 10px;
   padding-right: 10px;
   color: #fff;
-  position: relative;
   align-self: center;
-  left: auto;
-  top: auto;
-  right: auto;
-  bottom: 50%;
   font-size: 30px;
   font-family: Cambria, serif;
   border-radius: 8px;
