@@ -14,6 +14,8 @@
 .wrong {
     width: auto;
     margin-left: 0;
+    position: relative;
+    right: 0;
 }
 
 .button {
