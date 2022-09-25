@@ -39,12 +39,8 @@ body {
 
 input:-webkit-autofill {
   background-color: -moz-default-background-color !important;
-  -webkit-text-fill-color: #ddd;
-}
-
-
-input:-internal-autofill-selected {
-  background-color: #1b1c1e !important;
+  -webkit-text-fill-color: #1b1c1e;
+  font-size: 1.15em;
 }
 
 input {

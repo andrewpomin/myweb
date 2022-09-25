@@ -3,7 +3,8 @@ body {
 }
 
 .flex-container {
-  bottom: 10%;
+  position: relative;
+  bottom: 50%;
 }
 
 .groups {
