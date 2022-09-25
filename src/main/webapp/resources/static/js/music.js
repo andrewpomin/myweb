@@ -10,20 +10,34 @@ function startStop(element) {
         States.songPlaying = null;
     }
 
+    switcher(song);
+}
+
+function switcher(song) {
     if (song.paused) {
         States.songPlaying = song;
         song.play();
-        document.getElementById("play_" + element).classList.toggle("pause");
+        song.classList.toggle("pause");
         song.onended = (event) => {
-            document.getElementById("play_" + element).classList.toggle("pause");
-            let next = document.getElementById("play_" + element.nextSibling);
-            startStop(next);
+            song.classList.toggle("pause");
+            let next = song.nextSibling;
+            startElement(next);
         }
     } else {
         States.songPlaying = null;
         song.pause();
-        document.getElementById("play_" + element).classList.toggle("pause");
+        song.classList.toggle("pause");
     }
+}
+
+function startElement(element) {
+    if (States.songPlaying !== null) {
+        States.songPlaying.pause();
+        States.songPlaying.classList.toggle("pause");
+        States.songPlaying = null;
+    }
+
+    switcher(element);
 }
 
 function getDuration(id) {
