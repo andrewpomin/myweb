@@ -18,11 +18,16 @@ body {
     font-size: 1.4em;
 }
 
+input {
+    padding-left: 0;
+    width: 95%;
+}
+
 .wrong {
     width: auto;
     margin-left: auto;
     position: relative;
-    right: 0;
+    right: 2%;
 }
 
 .button {

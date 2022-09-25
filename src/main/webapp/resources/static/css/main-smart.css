@@ -7,12 +7,12 @@ html {
     background-color: inherit;
 }
 
+div,
+h1,
+p,
+a,
+form,
 button {
-    outline: none;
-}
-
-button:focus,
-button:active {
     outline: none;
 }
 
