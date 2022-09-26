@@ -42,6 +42,6 @@
 
 <script src="../js/main.js"></script>
 <script src="../js/music.js"></script>
-<script>window.onload="getDuration()"</script>
+<script>window.onload = getDuration()</script>
 
 </html>
