@@ -94,3 +94,11 @@ input {
 #inner-span {
   margin-left: 195px;
 }
+
+.toolText {
+    visibility: hidden;
+}
+
+.toolText:hover, toolText:active {
+    visibility: visible;
+}

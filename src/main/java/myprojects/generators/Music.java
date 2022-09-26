@@ -1,6 +1,7 @@
 package myprojects.generators;
 
 import myprojects.helpers.AmazonWorker;
+import myprojects.helpers.CyrillicToLatin;
 import myprojects.helpers.LowerNames;
 import software.amazon.awssdk.services.s3.model.*;
 
@@ -78,13 +79,18 @@ public class Music {
         }
         key = template.toString();
 
+        String lang = "";
+        if (CyrillicToLatin.isCyrillic(key)) {
+            lang = "lang=\"ua\"";
+        }
+
         AmazonWorker aw = new AmazonWorker();
         String author = key.substring(key.indexOf('/') + 1, key.indexOf(" - "));
         String name = key.substring(key.indexOf(" - ") + 3, key.indexOf(".mp3"));
         LowerNames lowerNames = new LowerNames();
         String songName = temp.substring(temp.indexOf('/') + 1);
         songName = lowerNames.rename(songName).substring(0, songName.indexOf(".mp3"));
-        return "<div class=\"music-container\">" +
+        return "<div class=\"music-container\"" + lang + ">" +
                 "<div class=\"box-music\">" +
                 "<button id=\"play_" + songName + "\" class=\"play\" onclick=\"startStop('" + songName + "')\"></button>" +
                 "<div class=\"song-name\">" +

@@ -18,7 +18,7 @@ public class CyrillicToLatin {
             File file = new File(directory + "\\" + path);
             StringBuilder path2 = new StringBuilder();
 
-            if (CyrillicToLatin.isNeededTranslate(path)) {
+            if (CyrillicToLatin.isCyrillic(path)) {
                 boolean isAllUpperCase = CyrillicToLatin.isNameUpperCase(path);
                 char previousLetter = ' ';
                 char[] charArray = path.toCharArray();
@@ -54,7 +54,7 @@ public class CyrillicToLatin {
         System.out.println("Processed files: " + counter);
     }
 
-    public static boolean isNeededTranslate(String path) {
+    public static boolean isCyrillic(String path) {
         for (char c : path.toCharArray()) {
             if (Character.UnicodeBlock.of(c) == Character.UnicodeBlock.CYRILLIC) {
                 return true;
