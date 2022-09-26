@@ -39,7 +39,7 @@ Array.from(document.getElementsByClassName("audio")).forEach(
         let sec = Math.floor(temp % 60);
         sec = String(sec);
         console.log(min + ":" + sec);
-        String back = min + ":" + sec;
+        let back = min + ":" + sec;
         document.getElementById("info_" + element).textContent = back;
 
     }
