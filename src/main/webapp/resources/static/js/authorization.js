@@ -9,5 +9,7 @@ function checkRepeat() {
         document.getElementById("button").setAttribute("style", "opacity: 0.6");
         document.getElementById("button").setAttribute("style", "cursor: not-allowed");
         console.log("false");
+        console.log(document.getElementById("password"));
+        console.log(document.getElementById("repeatPassword"));
     }
 }

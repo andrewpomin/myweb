@@ -77,11 +77,10 @@ public class Music {
             }
         }
         key = template.toString();
-        System.out.println(temp);
 
         AmazonWorker aw = new AmazonWorker();
-        String author = key.substring(key.indexOf('/') + 1, key.indexOf(" - ") - 1);
-        String name = key.substring(key.indexOf(" - ") + 2, key.indexOf(".mp3"));
+        String author = key.substring(key.indexOf('/') + 1, key.indexOf(" - "));
+        String name = key.substring(key.indexOf(" - ") + 3, key.indexOf(".mp3"));
         LowerNames lowerNames = new LowerNames();
         String songName = temp.substring(temp.indexOf('/') + 1);
         songName = lowerNames.rename(songName).substring(0, songName.indexOf(".mp3"));
