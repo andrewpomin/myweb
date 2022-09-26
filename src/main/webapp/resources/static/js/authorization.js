@@ -14,6 +14,6 @@ function toolVisible(String id) {
     document.getElementById(id).setAttribute("style", "visibility: visible");
 }
 
-function toolHidden() {
+function toolHidden(String id) {
     document.getElementById(id).setAttribute("style", "visibility: hidden");
 }
