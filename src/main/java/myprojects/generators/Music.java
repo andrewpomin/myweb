@@ -52,6 +52,7 @@ public class Music {
                     key.append(c);
                 }
             }
+            System.out.println(key);
             body.append(addSong(key.toString()));
             randomArray[random] = -1;
         }
@@ -66,6 +67,7 @@ public class Music {
             } else {
                 url.append(c);
             }
+            System.out.println(url);
         }
 
         AmazonWorker aw = new AmazonWorker();
