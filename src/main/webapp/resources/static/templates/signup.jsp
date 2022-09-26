@@ -57,7 +57,7 @@
     </label>
       <label class="object">
         <span style="width: 165px; margin-right: 10px"></span>
-        <span class="wrong" id="wrong" hidden>*User already exists</span>
+        <span class="wrong" id="wrong" <%= attribute %>>>*User already exists</span>
       </label>
       <label class="object">
         <span style="width: 165px; margin-right: 10px"></span>
