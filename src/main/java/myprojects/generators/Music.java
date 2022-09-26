@@ -15,8 +15,16 @@ public class Music {
 
         for (int i = 0; i < aw.getListSize(list); i++) {
             S3Object object = list.get(i);
-            String key = aw.getObjectKey(object);
-            body.append(addSong(key));
+            String templateKey = aw.getObjectKey(object);
+            StringBuilder key = new StringBuilder();
+            for (char c : templateKey.toCharArray()) {
+                if (c == '\'') {
+                    key.append("%");
+                } else {
+                    key.append(c);
+                }
+            }
+            body.append(addSong(String.valueOf(key)));
         }
         return String.valueOf(body);
     }
@@ -52,31 +60,30 @@ public class Music {
                     key.append(c);
                 }
             }
-            System.out.println(key);
             body.append(addSong(key.toString()));
             randomArray[random] = -1;
         }
         return String.valueOf(body);
     }
 
-    public String addSong(String key) {
+    public String addSong(String temp) {
         StringBuilder template = new StringBuilder();
-        String url;
-        for (char c : key.toCharArray()) {
+        String key;
+        for (char c : temp.toCharArray()) {
             if (c == '%') {
                 template.append("'");
             } else {
                 template.append(c);
             }
         }
-        url = template.toString();
-        System.out.println(key);
+        key = template.toString();
+        System.out.println(temp);
 
         AmazonWorker aw = new AmazonWorker();
-        String songName = key.substring(key.indexOf('/') + 1);
-        String author = songName.substring(0, songName.indexOf('-') - 1);
-        String name = songName.substring(songName.indexOf('-') + 2, songName.indexOf(".mp3"));
+        String author = key.substring(key.indexOf('/') + 1, key.indexOf(" - ") - 1);
+        String name = key.substring(key.indexOf(" - ") + 2, key.indexOf(".mp3"));
         LowerNames lowerNames = new LowerNames();
+        String songName = temp.substring(temp.indexOf('/') + 1);
         songName = lowerNames.rename(songName).substring(0, songName.indexOf(".mp3"));
         return "<div class=\"music-container\">" +
                 "<div class=\"box-music\">" +
@@ -85,7 +92,7 @@ public class Music {
                 "<p class=\"author\">" + author + "</p>" +
                 "<p class=\"song\">" + name + "</p>" +
                 "<audio id=\"" + songName + "\"" +
-                "src=\"" + aw.getURL(url) + "\"></audio>" +
+                "src=\"" + aw.getURL(key) + "\"></audio>" +
                 "</div>" +
                 "<div class=\"info-add\">" +
                 "<div class=\"info-music\" id=\"info_" + songName + "\" onload=\"getDuration('" + songName + "')\"></div>" +
