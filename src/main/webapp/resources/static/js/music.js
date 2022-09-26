@@ -28,8 +28,6 @@ function startStop(element) {
         song.pause();
         document.getElementById("play_" + element).classList.toggle("pause");
     }
-
-    // switcher(song);
 }
 
 function getDuration(id) {
