@@ -76,6 +76,7 @@ input {
   font-family: Cambria serif;
   color: #ddd;
   transition: 0.3s;
+  cursor: not-allowed
 }
 
 .button:hover {
@@ -84,7 +85,7 @@ input {
   color: #fff;
   border-color: #fff;
   box-shadow: 0 3px 3px 0 rgba(0,0,0,0.24), 0 3px 3px 0 rgba(0,0,0,0.19);
-  cursor: pointer;
+  cursor: not-allowed
 }
 
 #outer-span {
@@ -100,25 +101,20 @@ input {
     font-size: 20px;
     width: 300px;
         position: relative;
-        right: 129%;
-        bottom: 185%;
+        right: 15%;
         color: #b40e0e;
-
-        position: absolute;
-          z-index: 1;
-          bottom: 125%;
-          left: 50%;
-          margin-left: -60px;
+        border: 2px solid #b40e0e;
+            border-radius: 5px;
+            padding: 4px;
 
 }
 
-.toolText .toolText::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
+.toolText::after {
+    content: "";
+      position: absolute;
+      top: 40%;
+      left: 110%;
   border-width: 5px;
   border-style: solid;
-  border-color: #555 transparent transparent transparent;
+  border-color: transparent transparent transparent #b40e0e;
 }
