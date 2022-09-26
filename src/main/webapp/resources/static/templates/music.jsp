@@ -24,7 +24,7 @@
   <link rel="stylesheet" type="text/css" media="screen" href="../css/music.css">
   <link rel="stylesheet" type="text/css" media="screen and (max-device-width:720px)" href="../css/music-smart.css">
 </head>
-<body window.onload="getDuration()">
+<body>
 
 
   <%
@@ -42,5 +42,6 @@
 
 <script src="../js/main.js"></script>
 <script src="../js/music.js"></script>
+<script>window.onload="getDuration()"</script>
 
 </html>
