@@ -60,8 +60,8 @@ input {
 }
 
 .wrong {
-  width: 130px;
-  margin-left: 161px;
+  width: 170px;
+  margin-left: 121px;
   font-size: 16px;
   color: #b40e0e;
 }
@@ -76,7 +76,7 @@ input {
   font-family: Cambria serif;
   color: #ddd;
   transition: 0.3s;
-  cursor: not-allowed
+  cursor: auto;
 }
 
 .button:hover {
@@ -85,7 +85,7 @@ input {
   color: #fff;
   border-color: #fff;
   box-shadow: 0 3px 3px 0 rgba(0,0,0,0.24), 0 3px 3px 0 rgba(0,0,0,0.19);
-  cursor: not-allowed
+  cursor: not-allowed;
 }
 
 #outer-span {

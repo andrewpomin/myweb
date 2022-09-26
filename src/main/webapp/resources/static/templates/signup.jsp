@@ -63,7 +63,7 @@
         <span style="width: 165px; margin-right: 10px"></span>
         <span id="outer-span">
           <span id="inner-span"></span>
-          <button class="button" id="button" type="submit">Sign Up</button>
+          <button class="button" id="button" type="submit" onclick="check()">Sign Up</button>
         </span>
       </label>
   </div>
