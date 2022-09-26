@@ -33,16 +33,17 @@ function startStop(element) {
 function getDuration() {
     Array.from(document.getElementsByClassName("audio")).forEach(
         function(element) {
+        let id = element.id;
         let temp = element.duration;
         let min = Math.floor(temp / 60);
         let minutes = String(min);
         let sec = Math.floor(temp % 60);
         let seconds = String(sec);
         let time = minutes + ":" + seconds;
-        console.log(element);
-        console.log("info_" + element);
-        console.log(document.getElementById("info_" + element));
-        document.getElementById("info_" + element).innerText = time;
+        console.log(id);
+        console.log("info_" + id);
+        console.log(document.getElementById("info_" + id));
+        document.getElementById("info_" + id).innerText = time;
         }
     );
 }
