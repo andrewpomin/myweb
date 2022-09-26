@@ -1,5 +1,5 @@
 function checkRepeat() {
-console.log(document.getElementById("wrong").textContent);
+console.log(document.getElementById("wrong").innerText);
     if (document.getElementById("wrong").innerText !== "*User already exists") {
         if (document.getElementById("password").value === document.getElementById("repeatPassword").value) {
             document.getElementById("wrong").innerText = "";

@@ -7,6 +7,7 @@
   Music music = new Music();
   PrintWriter pw = response.getWriter();
   pw.write("<link rel=\"icon\" href=\"../icons/icon-my.png\" type=\"image/png\" sizes=\"64x64\">");
+  pw.write("<meta charset=\"UTF-8\">");
   pw.write(body.getNavigation());
   pw.write("<div class=\"outer-container\">");
 %>
