@@ -1,6 +1,6 @@
 function checkRepeat() {
-console.log(document.getElementById("wrong").value);
-    if (document.getElementById("wrong").value !== "*User already exists") {
+console.log(document.getElementById("wrong").textContent);
+    if (document.getElementById("wrong").innerText !== "*User already exists") {
         if (document.getElementById("password").value === document.getElementById("repeatPassword").value) {
             document.getElementById("wrong").innerText = "";
             document.getElementById("wrong").hidden = true;
@@ -13,8 +13,7 @@ console.log(document.getElementById("wrong").value);
     }
 }
 
-const button = document.getElementById("button");
-button.onclick = function() {
+function check() {
     if (document.getElementById("password").value === document.getElementById("repeatPassword").value) {
         document.getElementById("button").click();
     } else {
