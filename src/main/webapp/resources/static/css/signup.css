@@ -98,7 +98,3 @@ input {
 .toolText {
     visibility: hidden;
 }
-
-.toolText:hover, toolText:active {
-    visibility: visible;
-}
