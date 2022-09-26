@@ -96,7 +96,7 @@ public class Music {
                 "src=\"" + aw.getURL(key) + "\"></audio>" +
                 "</div>" +
                 "<div class=\"info-add\">" +
-                "<div class=\"info-music\" id=\"info_" + songName + "\"></div>" +
+                "<div class=\"info-music\" id=\"info_" + songName + "\">0:00</div>" +
                 "<button class=\"add\"></button>" +
                 "</div>" +
                 "</div>" +
