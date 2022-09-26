@@ -1,13 +1,15 @@
 function checkRepeat() {
     if (document.getElementById("password").value === document.getElementById("repeatPassword").value) {
+        document.getElementById("toolText").innerText = "";
         document.getElementById("button").disabled = false;
-        document.getElementById("button").setAttribute("style", "cursor: auto");
-        console.log("true");
+        document.getElementById("button").setAttribute("style", "cursor: pointer");
     } else {
+        document.getElementById("toolText").innerText = "Passwords do not match";
         document.getElementById("button").disabled = true;
         document.getElementById("button").setAttribute("style", "cursor: not-allowed");
-        console.log("false");
-        console.log(document.getElementById("password").value);
-        console.log(document.getElementById("repeatPassword").value);
     }
+}
+
+function toolText() {
+    document.getElementById("toolText").setAttribute("style", "visibility: visible");
 }

@@ -43,17 +43,17 @@
     </label>
     <label class="object">
       <span class="description">Email</span>
-      <input type="email" name="email" placeholder="email@email.com" required>
+      <input type="email" name="email" placeholder="email@email.com" autocomplete="off" required>
     </label>
     <label class="object">
       <span class="description">Password</span>
-      <input type="password" name="password" id="password" placeholder="password" oninput="checkRepeat()"
+      <input type="password" name="password" id="password" placeholder="password" autocomplete="off" oninput="checkRepeat()"
              pattern="(?=.*[0-9])(?=.*[a-z])[0-9a-zA-Z]{6,}" title="The password must contain at least 6 of
               upper and lower case Latin letters and numbers" required>
     </label>
     <label class="object">
       <span class="description">Repeat password</span>
-      <input type="password" id="repeatPassword" placeholder="repeat password" oninput="checkRepeat()" required>
+      <input type="password" id="repeatPassword" placeholder="repeat password" autocomplete="off" oninput="checkRepeat()" required>
     </label>
       <label class="object">
         <span style="width: 165px; margin-right: 10px"></span>
@@ -63,8 +63,8 @@
         <span style="width: 165px; margin-right: 10px"></span>
         <span id="outer-span">
           <span id="inner-span"></span>
-          <button class="button" id="button" type="submit" >Sign Up
-          <span class="toolText">Passwords do not match</span>
+          <button class="button" id="button" type="submit" onmouseover="toolText()">Sign Up
+          <span class="toolText" id="toolText"></span>
           </button>
         </span>
       </label>
