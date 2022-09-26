@@ -59,17 +59,17 @@ public class Music {
         return String.valueOf(body);
     }
 
-    public String addSong(String temp) {
+    public String addSong(String key) {
         StringBuilder template = new StringBuilder();
-        String key;
-        for (char c : temp.toCharArray()) {
+        String url;
+        for (char c : key.toCharArray()) {
             if (c == '%') {
                 template.append("'");
             } else {
                 template.append(c);
             }
         }
-        key = template.toString();
+        url = template.toString();
         System.out.println(key);
 
         AmazonWorker aw = new AmazonWorker();
@@ -85,7 +85,7 @@ public class Music {
                 "<p class=\"author\">" + author + "</p>" +
                 "<p class=\"song\">" + name + "</p>" +
                 "<audio id=\"" + songName + "\"" +
-                "src=\"" + aw.getURL(key) + "\"></audio>" +
+                "src=\"" + aw.getURL(url) + "\"></audio>" +
                 "</div>" +
                 "<div class=\"info-add\">" +
                 "<div class=\"info-music\" id=\"info_" + songName + "\" onload=\"getDuration('" + songName + "')\"></div>" +
