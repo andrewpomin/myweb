@@ -35,14 +35,9 @@ function getDuration() {
         function(element) {
         let id = element.id;
         let temp = element.duration;
-        let min = Math.floor(temp / 60);
-        let minutes = String(min);
-        let sec = Math.floor(temp % 60);
-        let seconds = String(sec);
-        let time = minutes + ":" + seconds;
-        console.log(id);
-        console.log("info_" + id);
-        console.log(document.getElementById("info_" + id));
+        let min = String(Math.floor(temp / 60));
+        let sec = String(Math.floor(temp % 60));
+        let time = min + ":" + sec;
         document.getElementById("info_" + id).innerText = time;
         }
     );
