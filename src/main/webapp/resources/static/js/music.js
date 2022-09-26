@@ -36,8 +36,8 @@ Array.from(document.getElementsByClassName("audio")).forEach(
         let temp = element.duration;
         let min = Math.floor(temp / 60);
         let sec = Math.floor(temp % 60);
-        console.log(min + " " + sec);
-        document.getElementById("info_" + element).textContent = min + ":" + sec;
+        console.log(String(min + " " + sec));
+        document.getElementById("info_" + element).textContent = String(min) + ":" + String(sec);
 
     }
 );
