@@ -47,27 +47,30 @@
     </label>
     <label class="object">
       <span class="description">Password</span>
-      <input type="password" name="password" placeholder="password"
+      <input type="password" name="password" id="password" placeholder="password"
              pattern="(?=.*[0-9])(?=.*[a-z])[0-9a-zA-Z]{6,}" title="The password must contain at least 6 of
               upper and lower case Latin letters and numbers" required>
     </label>
     <label class="object">
       <span class="description">Repeat password</span>
-      <input type="password" placeholder="repeat password" required>
+      <input type="password" id="repeatPassword" placeholder="repeat password" oninput="checkRepeat()" required>
     </label>
       <label class="object">
         <span style="width: 165px; margin-right: 10px"></span>
-        <span class="wrong" <%= attribute %>>*User already exists</span>
+        <span class="wrong" id="wrong" hidden>*User already exists</span>
       </label>
       <label class="object">
         <span style="width: 165px; margin-right: 10px"></span>
         <span id="outer-span">
           <span id="inner-span"></span>
-          <button class="button" type="submit">Sign Up</button>
+          <button class="button" id="button" type="submit" >Sign Up</button>
         </span>
       </label>
   </div>
 </div>
 </form>
 </body>
+
+    <script src="../js/authorization.js"></script>
+
 </html>
