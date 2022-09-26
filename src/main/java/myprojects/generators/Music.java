@@ -67,8 +67,8 @@ public class Music {
             } else {
                 url.append(c);
             }
-            System.out.println(url);
         }
+        System.out.println(key);
 
         AmazonWorker aw = new AmazonWorker();
         String songName = key.substring(key.indexOf('/') + 1);
