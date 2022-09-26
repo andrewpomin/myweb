@@ -31,17 +31,18 @@ function startStop(element) {
 }
 
 function getDuration() {
-Array.from(document.getElementsByClassName("audio")).forEach(
-    function(element) {
+    Array.from(document.getElementsByClassName("audio")).forEach(
+        function(element) {
         let temp = element.duration;
         let min = Math.floor(temp / 60);
         let minutes = String(min);
         let sec = Math.floor(temp % 60);
         let seconds = String(sec);
         let time = minutes + ":" + seconds;
-        console.log(time);
+        console.log(element);
+        console.log("info_" + element);
         console.log(document.getElementById("info_" + element));
         document.getElementById("info_" + element).innerText = time;
-    }
-);
+        }
+    );
 }
