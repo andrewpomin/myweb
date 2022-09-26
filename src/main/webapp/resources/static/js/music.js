@@ -40,8 +40,8 @@ function sleep(milliseconds) {
 
 function getDuration() {
     Array.from(document.getElementsByClassName("audio")).forEach(
-        sleep(50);
         function(element) {
+        sleep(50);
         let id = element.id;
         let temp = element.duration;
         let min = String(Math.floor(temp / 60));
