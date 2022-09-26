@@ -35,9 +35,12 @@ Array.from(document.getElementsByClassName("audio")).forEach(
     function(element, index, array) {
         let temp = element.duration;
         let min = Math.floor(temp / 60);
+        min = String(min);
         let sec = Math.floor(temp % 60);
-        console.log(String(min + " " + sec));
-        document.getElementById("info_" + element).textContent = String(min) + ":" + String(sec);
+        sec = String(sec);
+        console.log(min + ":" + sec);
+        String back = min + ":" + sec;
+        document.getElementById("info_" + element).textContent = back;
 
     }
 );
