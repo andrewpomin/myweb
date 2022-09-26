@@ -30,7 +30,10 @@ function startStop(element) {
     }
 }
 
-function getDuration(id) {
-    let temp = document.getElementById(id).duration;
-    document.getElementById("info_" + id).textContent = (temp / 60).toString() + ":" + (temp % 60).toString();
+function getDuration() {
+for (element in document.getElementsByClassName("audio")) {
+    let element = class.duration;
+    document.getElementById("info_" + element).textContent = Math.floor(temp / 60).toString() + ":" + Math.floor(temp % 60).toString();
+
 }
+  }

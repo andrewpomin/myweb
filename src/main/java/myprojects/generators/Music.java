@@ -100,11 +100,11 @@ public class Music {
                 "<div class=\"song-name\">" +
                 "<p class=\"author\"" + langA + ">" + author + "</p>" +
                 "<p class=\"song\"" + langN + ">" + name + "</p>" +
-                "<audio id=\"" + songName + "\"" +
+                "<audio class=\"audio\" id=\"" + songName + "\"" +
                 "src=\"" + aw.getURL(key) + "\"></audio>" +
                 "</div>" +
                 "<div class=\"info-add\">" +
-                "<div class=\"info-music\" id=\"info_" + songName + "\" onload=\"getDuration('" + songName + "')\"></div>" +
+                "<div class=\"info-music\" id=\"info_" + songName + "\" script.onload=\"getDuration('" + songName + "')\"></div>" +
                 "<button class=\"add\"></button>" +
                 "</div>" +
                 "</div>" +
