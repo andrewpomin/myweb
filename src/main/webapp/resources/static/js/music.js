@@ -38,10 +38,9 @@ Array.from(document.getElementsByClassName("audio")).forEach(
         let minutes = String(min);
         let sec = Math.floor(temp % 60);
         let seconds = String(sec);
-        console.log(minutes + ":" + seconds);
         let time = minutes + ":" + seconds;
         console.log(time);
-        document.getElementById("info_" + element).textContent = minutes + ":" + seconds;
+        document.getElementById("info_" + element).innerText = time;
     }
 );
 }
