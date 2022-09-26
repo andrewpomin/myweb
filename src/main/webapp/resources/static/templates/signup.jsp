@@ -25,7 +25,7 @@
   <link rel="stylesheet" type="text/css" media="screen and (max-device-width:720px)" href="../css/signup-smart.css">
 </head>
 <body>
-  <form action="${pageContext.request.contextPath}/user/register" method="post" autocomplete="off">
+  <form action="${pageContext.request.contextPath}/user/register" method="post" autocomplete="none">
   <div class="outer">
     <div class="inner">
     <label class="object">
@@ -43,7 +43,7 @@
     </label>
     <label class="object">
       <span class="description">Email</span>
-      <input type="email" name="email" placeholder="email@email.com" autocomplete="off" required>
+      <input type="email" name="email" placeholder="email@email.com" autocomplete="nope" required>
     </label>
     <label class="object">
       <span class="description">Password</span>
@@ -64,7 +64,7 @@
         <span style="width: 165px; margin-right: 10px"></span>
         <span id="outer-span">
           <span id="inner-span"></span>
-          <button class="button" id="button" type="submit" onclick="check()">Sign Up</button>
+          <button class="button" id="button" type="submit">Sign Up</button>
         </span>
       </label>
   </div>

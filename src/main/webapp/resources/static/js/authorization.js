@@ -13,7 +13,7 @@ console.log(document.getElementById("wrong").value);
     }
 }
 
-function check() {
+button.onclick = function() {
     if (document.getElementById("password").value === document.getElementById("repeatPassword").value) {
         document.getElementById("button").click();
     } else {
