@@ -10,10 +10,10 @@ function checkRepeat() {
     }
 }
 
-function toolVisible(String id) {
+function toolVisible(id) {
     document.getElementById(id).setAttribute("style", "visibility: visible");
 }
 
-function toolHidden(String id) {
+function toolHidden(id) {
     document.getElementById(id).setAttribute("style", "visibility: hidden");
 }
