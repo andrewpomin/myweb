@@ -31,10 +31,13 @@ function startStop(element) {
 }
 
 function getDuration() {
-for (element in document.getElementsByClassName("audio")) {
-    let temp = element.duration;
-    console.log(element);
-    console.log(temp);
-    document.getElementById("info_" + element).textContent = Math.floor(temp / 60).toString() + ":" + Math.floor(temp % 60).toString();
-}
+Array.from(document.getElementsByClassName("audio")).forEach(
+    function(element, index, array) {
+        let temp = element.duration;
+            console.log(element);
+            console.log(temp);
+            document.getElementById("info_" + element).textContent = Math.floor(temp / 60).toString() + ":" + Math.floor(temp % 60).toString();
+
+    }
+);
   }
