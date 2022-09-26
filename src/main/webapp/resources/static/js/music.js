@@ -40,8 +40,8 @@ Array.from(document.getElementsByClassName("audio")).forEach(
         let seconds = String(sec);
         console.log(minutes + ":" + seconds);
         let time = minutes + ":" + seconds;
-        document.getElementById("info_" + element).textContent = time;
-
+        console.log(time);
+        document.getElementById("info_" + element).textContent = minutes + ":" + seconds;
     }
 );
-  }
+}
