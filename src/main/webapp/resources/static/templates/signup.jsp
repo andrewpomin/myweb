@@ -25,7 +25,7 @@
   <link rel="stylesheet" type="text/css" media="screen and (max-device-width:720px)" href="../css/signup-smart.css">
 </head>
 <body>
-  <form action="${pageContext.request.contextPath}/user/register" method="post">
+  <form action="${pageContext.request.contextPath}/user/register" method="post" autocomplete="off">
   <div class="outer">
     <div class="inner">
     <label class="object">
@@ -47,17 +47,18 @@
     </label>
     <label class="object">
       <span class="description">Password</span>
-      <input type="password" name="password" id="password" placeholder="password" autocomplete="off" oninput="checkRepeat()"
+      <input type="password" name="password" id="password" placeholder="password" oninput="checkRepeat()"
              pattern="(?=.*[0-9])(?=.*[a-z])[0-9a-zA-Z]{6,}" title="The password must contain at least 6 of
               upper and lower case Latin letters and numbers" required>
     </label>
     <label class="object">
       <span class="description">Repeat password</span>
-      <input type="password" id="repeatPassword" placeholder="repeat password" autocomplete="off" oninput="checkRepeat()" required>
+      <input type="password" id="repeatPassword" placeholder="repeat password" oninput="checkRepeat()" required>
     </label>
       <label class="object">
-        <span style="width: 165px; margin-right: 10px"></span>
-        <span class="wrong" id="wrong" <%= attribute %>>*User already exists</span>
+        <span class="wrong-container">
+            <span class="wrong" id="wrong" <%= attribute %>>*User already exists</span>
+        </span>
       </label>
       <label class="object">
         <span style="width: 165px; margin-right: 10px"></span>
