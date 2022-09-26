@@ -34,9 +34,10 @@ function getDuration() {
 Array.from(document.getElementsByClassName("audio")).forEach(
     function(element, index, array) {
         let temp = element.duration;
-            console.log(element);
-            console.log(temp);
-            document.getElementById("info_" + element).textContent = Math.floor(temp / 60).toString() + ":" + Math.floor(temp % 60).toString();
+        let min = Math.floor(temp / 60);
+        let sec = Math.floor(temp % 60);
+        console.log(min + " " + sec);
+        document.getElementById("info_" + element).textContent = min + ":" + sec;
 
     }
 );
