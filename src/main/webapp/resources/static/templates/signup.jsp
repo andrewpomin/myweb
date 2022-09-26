@@ -57,14 +57,13 @@
     </label>
       <label class="object">
         <span style="width: 165px; margin-right: 10px"></span>
-        <span class="wrong" id="wrong" <%= attribute %>>>*User already exists</span>
+        <span class="wrong" id="wrong" <%= attribute %>>*User already exists</span>
       </label>
       <label class="object">
         <span style="width: 165px; margin-right: 10px"></span>
         <span id="outer-span">
-          <span id="inner-span"></span>
-          <button class="button" id="button" type="submit" onmouseover="toolVisible('toolText')" onmouseout="toolHidden('toolText')">Sign Up
           <span class="toolText" id="toolText">Passwords do not match</span>
+          <button class="button" id="button" type="submit" onmouseover="toolVisible('toolText')" onmouseout="toolHidden('toolText')">Sign Up
           </button>
         </span>
       </label>
