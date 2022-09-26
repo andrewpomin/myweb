@@ -39,8 +39,8 @@ function sleep(milliseconds) {
 }
 
 function getDuration() {
-    sleep(3000);
     Array.from(document.getElementsByClassName("audio")).forEach(
+        sleep(50);
         function(element) {
         let id = element.id;
         let temp = element.duration;
