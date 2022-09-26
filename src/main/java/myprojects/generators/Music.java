@@ -78,7 +78,6 @@ public class Music {
             }
         }
         key = template.toString();
-        System.out.println(key);
 
         AmazonWorker aw = new AmazonWorker();
         String author = key.substring(key.indexOf('/') + 1, key.indexOf(" - "));
@@ -91,12 +90,11 @@ public class Music {
         if (CyrillicToLatin.isCyrillic(name)) {
             langN = "lang=\"uk\"";
         }
-        System.out.println(name);
 
         LowerNames lowerNames = new LowerNames();
         String songName = temp.substring(temp.indexOf('/') + 1);
         songName = lowerNames.rename(songName).substring(0, songName.indexOf(".mp3"));
-        return "<div class=\"music-container\">" +
+        String back = "<div class=\"music-container\">" +
                 "<div class=\"box-music\">" +
                 "<button id=\"play_" + songName + "\" class=\"play\" onclick=\"startStop('" + songName + "')\"></button>" +
                 "<div class=\"song-name\">" +
@@ -111,5 +109,7 @@ public class Music {
                 "</div>" +
                 "</div>" +
                 "</div>";
+        System.out.println(back);
+        return back;
     }
 }
