@@ -78,6 +78,7 @@ public class Music {
             }
         }
         key = template.toString();
+        System.out.println(key);
 
         AmazonWorker aw = new AmazonWorker();
         String author = key.substring(key.indexOf('/') + 1, key.indexOf(" - "));
@@ -90,6 +91,7 @@ public class Music {
         if (CyrillicToLatin.isCyrillic(name)) {
             langN = "lang=\"uk\"";
         }
+        System.out.println(name);
 
         LowerNames lowerNames = new LowerNames();
         String songName = temp.substring(temp.indexOf('/') + 1);
