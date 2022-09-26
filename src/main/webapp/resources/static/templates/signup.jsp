@@ -62,9 +62,8 @@
       <label class="object">
         <span style="width: 165px; margin-right: 10px"></span>
         <span id="outer-span">
-          <span class="toolText" id="toolText">Passwords do not match</span>
-          <button class="button" id="button" type="submit" onmouseover="toolVisible('toolText')" onmouseout="toolHidden('toolText')">Sign Up
-          </button>
+          <span id="inner-span"></span>
+          <button class="button" id="button" type="submit">Sign Up</button>
         </span>
       </label>
   </div>

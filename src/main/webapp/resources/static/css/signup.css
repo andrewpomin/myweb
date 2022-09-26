@@ -90,29 +90,11 @@ input {
 
 #outer-span {
   width: 291px;
+  display: flex;
+      align-items: center;
+      justify-content: flex-end;
 }
 
 #inner-span {
-  margin-left: 195px;
-}
-
-.toolText {
-    visibility: hidden;
-    font-size: 1.15em;
-
-        position: relative;
-        right: 15%;
-        color: #b40e0e;
-
-
-}
-
-.toolText::after {
-    content: "";
-      position: absolute;
-      top: 30%;
-      left: 108%;
-  border-width: 5px;
-  border-style: solid;
-  border-color: transparent transparent transparent #b40e0e;
+    width: 195px;
 }
