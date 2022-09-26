@@ -97,4 +97,28 @@ input {
 
 .toolText {
     visibility: hidden;
+    font-size: 20px;
+    width: 300px;
+        position: relative;
+        right: 129%;
+        bottom: 185%;
+        color: #b40e0e;
+
+        position: absolute;
+          z-index: 1;
+          bottom: 125%;
+          left: 50%;
+          margin-left: -60px;
+
+}
+
+.toolText .toolText::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
 }

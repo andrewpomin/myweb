@@ -64,7 +64,7 @@
         <span id="outer-span">
           <span id="inner-span"></span>
           <button class="button" id="button" type="submit" onmouseover="toolVisible('toolText')" onmouseout="toolHidden('toolText')">Sign Up
-          <span class="toolText" id="toolText"></span>
+          <span class="toolText" id="toolText">Passwords do not match</span>
           </button>
         </span>
       </label>
