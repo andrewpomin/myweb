@@ -39,7 +39,7 @@
 
     pw.write("</div>");
   %>
-
+<div>Тінь</div>
 </body>
 
 <script src="../js/main.js"></script>
