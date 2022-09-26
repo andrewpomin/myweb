@@ -82,14 +82,6 @@ public class Music {
         AmazonWorker aw = new AmazonWorker();
         String author = key.substring(key.indexOf('/') + 1, key.indexOf(" - "));
         String name = key.substring(key.indexOf(" - ") + 3, key.indexOf(".mp3"));
-        String langA = "";
-        String langN = "";
-        if (CyrillicToLatin.isCyrillic(author)) {
-            langA = "lang=\"uk\"";
-        }
-        if (CyrillicToLatin.isCyrillic(name)) {
-            langN = "lang=\"uk\"";
-        }
 
         LowerNames lowerNames = new LowerNames();
         String songName = temp.substring(temp.indexOf('/') + 1);
@@ -98,13 +90,13 @@ public class Music {
                 "<div class=\"box-music\">" +
                 "<button id=\"play_" + songName + "\" class=\"play\" onclick=\"startStop('" + songName + "')\"></button>" +
                 "<div class=\"song-name\">" +
-                "<p class=\"author\"" + langA + ">" + author + "</p>" +
-                "<p class=\"song\"" + langN + ">" + name + "</p>" +
+                "<p class=\"author\">" + author + "</p>" +
+                "<p class=\"song\">" + name + "</p>" +
                 "<audio class=\"audio\" id=\"" + songName + "\"" +
                 "src=\"" + aw.getURL(key) + "\"></audio>" +
                 "</div>" +
                 "<div class=\"info-add\">" +
-                "<div class=\"info-music\" id=\"info_" + songName + "\" script.onload=\"getDuration('" + songName + "')\"></div>" +
+                "<div class=\"info-music\" id=\"info_" + songName + "\"></div>" +
                 "<button class=\"add\"></button>" +
                 "</div>" +
                 "</div>" +
