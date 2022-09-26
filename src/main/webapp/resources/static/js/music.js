@@ -32,7 +32,7 @@ function startStop(element) {
 
 function getDuration() {
 for (element in document.getElementsByClassName("audio")) {
-    let element = class.duration;
+    let element = element.duration;
     document.getElementById("info_" + element).textContent = Math.floor(temp / 60).toString() + ":" + Math.floor(temp % 60).toString();
 
 }
