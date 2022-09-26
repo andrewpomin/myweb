@@ -46,7 +46,7 @@ public class Music {
             String templateKey = aw.getObjectKey(object);
             StringBuilder key = new StringBuilder();
             for (char c : templateKey.toCharArray()) {
-                if (c == '\\') {
+                if (c == '\'') {
                     key.append("%");
                 } else {
                     key.append(c);

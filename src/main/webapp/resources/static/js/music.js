@@ -5,7 +5,7 @@ class States {
 function startStop(element) {
     let song = document.getElementById(element);
 
-    if (States.songPlaying !== null && !States.songPlaying.paused) {
+    if (States.songPlaying !== null && !States.songPlaying.paused && States.songPlaying !== song) {
         States.songPlaying.pause();
         let templateId = "play_" + States.songPlaying.id;
         document.getElementById(templateId).classList.toggle("pause");
@@ -19,11 +19,8 @@ function startStop(element) {
             States.songPlaying = null;
             document.getElementById("play_" + element).classList.toggle("pause");
             let nextContainer = document.getElementById("play_" + element).parentElement.parentElement.nextSibling;
-            console.log(nextContainer);
             let next = nextContainer.firstChild.firstChild;
-            console.log(next);
             let id = next.id.substring(5);
-            console.log(id);
             startStop(id);
         }
 
