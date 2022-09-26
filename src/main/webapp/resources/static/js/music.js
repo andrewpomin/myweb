@@ -31,6 +31,7 @@ function startStop(element) {
 }
 
 function getDuration() {
+    sleep(3000);
     Array.from(document.getElementsByClassName("audio")).forEach(
         function(element) {
         let id = element.id;
