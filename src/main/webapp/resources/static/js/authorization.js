@@ -10,6 +10,10 @@ function checkRepeat() {
     }
 }
 
-function toolText() {
+function toolVisible() {
     document.getElementById("toolText").setAttribute("style", "visibility: visible");
+}
+
+function toolHidden() {
+    document.getElementById("toolText").setAttribute("style", "visibility: hidden");
 }
