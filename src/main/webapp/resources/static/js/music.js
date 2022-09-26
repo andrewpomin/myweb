@@ -32,7 +32,7 @@ function startStop(element) {
 
 function getDuration() {
 Array.from(document.getElementsByClassName("audio")).forEach(
-    function(element, index, array) {
+    function(element) {
         let temp = element.duration;
         let min = Math.floor(temp / 60);
         let minutes = String(min);
@@ -40,6 +40,7 @@ Array.from(document.getElementsByClassName("audio")).forEach(
         let seconds = String(sec);
         let time = minutes + ":" + seconds;
         console.log(time);
+        console.log(document.getElementById("info_" + element));
         document.getElementById("info_" + element).innerText = time;
     }
 );
