@@ -47,7 +47,7 @@
     </label>
     <label class="object">
       <span class="description">Password</span>
-      <input type="password" name="password" id="password" placeholder="password"
+      <input type="password" name="password" id="password" placeholder="password" oninput="checkRepeat()"
              pattern="(?=.*[0-9])(?=.*[a-z])[0-9a-zA-Z]{6,}" title="The password must contain at least 6 of
               upper and lower case Latin letters and numbers" required>
     </label>
