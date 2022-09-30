@@ -89,7 +89,7 @@ public class DefaultUsersService {
                 user.setSessionId("forceQuit");
                 user.setLogin(false);
                 UsersDTO usersDTOOld = usersConverter.fromUsersToUsersDto(user);
-                updateUser(usersDTOOld);
+                usersRepository.save(usersConverter.fromUsersDtoToUsers(usersDTOOld));
                 return;
             }
         }
