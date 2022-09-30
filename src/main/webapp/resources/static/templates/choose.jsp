@@ -20,6 +20,11 @@
                 <button class="b-signup">Sign Up</button>
             </form>
         </div>
+        <div class="researcher">
+            <form action="/researcher" class="form">
+                <button class="b-researcher">I am researcher</button>
+            </form>
+        </div>
     </div>
 </body>
 </html>

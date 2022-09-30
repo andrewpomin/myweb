@@ -14,10 +14,16 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
-  top: 10%;
+  top: 15%;
 }
 
 .groups {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.researcher {
   width: 400px;
   display: flex;
   justify-content: space-between;
@@ -69,6 +75,32 @@ body {
 }
 
 .b-signup:hover {
+  animation-delay: 0.7s;
+  background-color: #07544BFF;
+  animation-name: colors;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.24), 0 3px 3px 0 rgba(0,0,0,0.19);
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+.b-researcher {
+  margin: 5px;
+  width: auto;
+  height: 50px;
+  border: 2px solid #000;
+  outline: 1px solid #999;
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.24), 1px 0 0 1px rgba(0,0,0,0.19);
+  border-radius: 8px;
+  background-color: #07544BFF;
+  font-size: 28px;
+  font-family: Cambria, serif;
+  color: #000;
+  transition: 0.7s;
+}
+
+.b-researcher:hover {
   animation-delay: 0.7s;
   background-color: #07544BFF;
   animation-name: colors;
