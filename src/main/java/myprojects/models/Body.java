@@ -1,4 +1,4 @@
-package myprojects.generators;
+package myprojects.models;
 
 public class Body {
     public String getNavigation() {

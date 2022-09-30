@@ -1,7 +1,6 @@
-package myprojects.generators;
+package myprojects.models;
 
 import myprojects.helpers.AmazonWorker;
-import myprojects.helpers.CyrillicToLatin;
 import myprojects.helpers.LowerNames;
 import software.amazon.awssdk.services.s3.model.*;
 
