@@ -80,4 +80,23 @@ public class UsersController {
             response.sendRedirect(request.getContextPath() + "/");
         }
     }
+
+    @PostMapping("/researcher")
+    public void registerRandom(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        String sessionId = request.getSession().getId();
+        long createTime = request.getSession().getCreationTime();
+        int random = (int) (Math.random() * 1000);
+        UsersDTO usersDTO = UsersDTO.builder()
+                .email("email" + random + "@email.com")
+                .firstName("Researcher")
+                .lastName("Researcher")
+                .phone("+380123456789")
+                .password("password")
+                .sessionId(sessionId)
+                .createTimeSession(createTime)
+                .isLogin(true)
+                .build();
+        defaultUsersService.saveUser(usersDTO);
+        response.sendRedirect(request.getContextPath() + "/");
+    }
 }

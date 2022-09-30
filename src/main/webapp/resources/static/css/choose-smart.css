@@ -4,6 +4,7 @@
   justify-content: center;
   display: flex;
   flex-direction: column;
+  top: 17%;
 }
 
 .groups {
@@ -24,6 +25,12 @@
 
 .b-signup {
   width: 100px;
+  height: 40px;
+  font-size: 1.25em;
+}
+
+.b-researcher {
+  width: auto;
   height: 40px;
   font-size: 1.25em;
 }

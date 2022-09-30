@@ -21,7 +21,7 @@
             </form>
         </div>
         <div class="researcher">
-            <form action="/researcher" class="form">
+            <form action="${pageContext.request.contextPath}/user/researcher" method="post" class="form">
                 <button class="b-researcher">I am researcher</button>
             </form>
         </div>
