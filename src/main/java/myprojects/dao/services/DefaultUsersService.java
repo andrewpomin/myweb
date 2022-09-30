@@ -24,7 +24,7 @@ public class DefaultUsersService {
         if (isNull(usersDto)) {
             System.out.println("Object user is null");
         }
-        closePreviousSession();
+        closePreviousSession(usersDto);
     }
 
     public boolean isLogin(String sessionId) {
@@ -80,20 +80,18 @@ public class DefaultUsersService {
         return usersRepository.findAll().stream().map(usersConverter::fromUsersToUsersDto).collect(Collectors.toList());
     }
 
-    public void closePreviousSession() {
+    public void closePreviousSession(UsersDTO usersDTO) {
         List<UsersDTO> list = findAll();
-        HashMap<String, Boolean> template = new HashMap<>();
         for (UsersDTO u : list) {
-            if (template.containsKey(u.getSessionId())) {
+            if (u.getSessionId().equals(usersDTO.getSessionId())) {
                 //close session
                 Users user = usersRepository.findBySessionId(u.getSessionId());
                 user.setSessionId("forceQuit");
                 user.setLogin(false);
-                UsersDTO usersDTO = usersConverter.fromUsersToUsersDto(user);
-                updateUser(usersDTO);
-                break;
+                UsersDTO usersDTOOld = usersConverter.fromUsersToUsersDto(user);
+                updateUser(usersDTOOld);
+                return;
             }
-            template.put(u.getSessionId(), u.isLogin());
         }
     }
 }
