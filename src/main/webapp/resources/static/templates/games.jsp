@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <%@ page import="java.io.*" %>
-<%@ page import="myprojects.generators.Games" %>
+<%@ page import="myprojects.models.Games" %>
 <%
   Games games = new Games();
   PrintWriter pw = response.getWriter();

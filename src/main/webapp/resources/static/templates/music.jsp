@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page import="java.io.*" %>
-<%@ page import="myprojects.generators.Music" %>
-<%@ page import="myprojects.generators.Body" %>
+<%@ page import="myprojects.models.Music" %>
+<%@ page import="myprojects.models.Body" %>
 <%
   Body body = new Body();
   Music music = new Music();

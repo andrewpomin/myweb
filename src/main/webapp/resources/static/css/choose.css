@@ -93,10 +93,10 @@ body {
   outline: 1px solid #999;
   box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.24), 1px 0 0 1px rgba(0,0,0,0.19);
   border-radius: 8px;
-  background-color: #07544BFF;
+  background-color: #000;
   font-size: 28px;
   font-family: Cambria, serif;
-  color: #000;
+  color: #fff;
   transition: 0.7s;
 }
 
